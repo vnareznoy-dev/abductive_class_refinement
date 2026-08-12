@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+vid2/
+rf/
+data/
+models/
+runs/
+*.pt
+*.pdf
+*.mp4

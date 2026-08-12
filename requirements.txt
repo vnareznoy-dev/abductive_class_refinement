@@ -1,0 +1,5 @@
+numpy>=1.24
+opencv-python>=4.8
+pyswip>=0.2.10
+matplotlib>=3.7
+ultralytics>=8.4.131

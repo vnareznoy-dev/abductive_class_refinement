@@ -1,0 +1,12 @@
+bird (cormorant) width: n=48 share=0.73 floor=0.36 ratio=2.02 peak=4.69 Hz
+run 1: 40 frames | width 0.58 | height 0.51 | area 0.58 | h/w 0.41
+run 2: 64 frames | width 0.50 | height 0.52 | area 0.48 | h/w 0.33
+run 3: 34 frames | width 0.37 | height 0.51 | area 0.42 | h/w 0.50
+run 4: 429 frames | width 0.35 | height 0.34 | area 0.34 | h/w 0.32
+run 5: 34 frames | width 0.41 | height 0.37 | area 0.40 | h/w 0.38
+run 6: 620 frames | width 0.37 | height 0.38 | area 0.38 | h/w 0.38
+run 7: 209 frames | width 0.35 | height 0.41 | area 0.39 | h/w 0.43
+run 8: 204 frames | width 0.31 | height 0.29 | area 0.32 | h/w 0.40
+run 9: 1104 frames | width 0.33 | height 0.35 | area 0.35 | h/w 0.36
+specificity with 4 measures (incl. width): 0 of 36 signals fired
+UAV 48-frame width windows: n=100; band share median 0.37, 5-95 % 0.24-0.53; windows above 2x floor (0.72): 0

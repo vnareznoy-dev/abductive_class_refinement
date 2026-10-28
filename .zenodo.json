@@ -1,0 +1,21 @@
+{
+  "title": "Abductive class refinement for airborne objects: code and reports for the article on the groundability principle of perceptual facts",
+  "upload_type": "software",
+  "description": "Reference implementation, reproduction scripts and saved reports for the article \"Abductive refinement of the airborne object class based on the groundability principle of perceptual facts\" (V. Yu. Nareznoy, Odesa Polytechnic National University). A logical fact about an observed object is asserted only when it is measurable by the available camera; an abductive logic program combines the neural detector label with kinematic and silhouette facts and returns a verdict with an explanation or a justified abstention. Third-party datasets and videos are not redistributed; their sources and licenses are listed in README.md.",
+  "creators": [
+    {
+      "name": "Nareznoy, Volodymyr",
+      "affiliation": "Odesa Polytechnic National University",
+      "orcid": "0009-0009-1397-5687"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "abductive logic programming",
+    "neuro-symbolic AI",
+    "symbol grounding",
+    "bird and UAV discrimination",
+    "wing-beat detection",
+    "abstention"
+  ]
+}

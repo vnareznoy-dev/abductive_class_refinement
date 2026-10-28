@@ -1,0 +1,19 @@
+track #338: frames 1159-1215, 55 points, median mask 5x6 px
+
+(a) as tracked           start 1159: w 1.63x @ 2.50 Hz | h 2.34x @ 2.50 Hz FIRED
+(a) as tracked           start 1160: w 1.71x @ 2.50 Hz | h 2.35x @ 2.50 Hz FIRED
+(a) as tracked           start 1161: w 1.71x @ 2.50 Hz | h 2.35x @ 2.50 Hz FIRED
+(a) as tracked           start 1162: w 1.72x @ 2.50 Hz | h 2.36x @ 2.50 Hz FIRED
+(a) as tracked           start 1163: w 1.73x @ 2.50 Hz | h 2.37x @ 2.50 Hz FIRED
+(a) as tracked           start 1164: w 1.77x @ 2.50 Hz | h 2.44x @ 2.50 Hz FIRED
+(a) as tracked           start 1165: w 1.71x @ 2.50 Hz | h 2.50x @ 2.50 Hz FIRED
+(a) as tracked           start 1166: w 1.68x @ 2.50 Hz | h 2.39x @ 2.50 Hz FIRED
+
+(b) crossing removed     start 1159: w 2.20x @ 3.12 Hz FIRED | h 2.84x @ 3.12 Hz FIRED
+(b) crossing removed     start 1160: w 2.31x @ 3.12 Hz FIRED | h 2.82x @ 3.12 Hz FIRED
+(b) crossing removed     start 1161: w 2.30x @ 3.12 Hz FIRED | h 2.80x @ 3.12 Hz FIRED
+(b) crossing removed     start 1162: w 2.31x @ 3.12 Hz FIRED | h 2.76x @ 2.50 Hz FIRED
+(b) crossing removed     start 1163: w 2.27x @ 3.12 Hz FIRED | h 2.77x @ 2.50 Hz FIRED
+(b) crossing removed     start 1164: w 2.28x @ 3.12 Hz FIRED | h 2.85x @ 2.50 Hz FIRED
+(b) crossing removed     start 1165: w 2.20x @ 3.12 Hz FIRED | h 2.93x @ 2.50 Hz FIRED
+(b) crossing removed     start 1166: w 2.17x @ 3.12 Hz FIRED | h 2.77x @ 2.50 Hz FIRED

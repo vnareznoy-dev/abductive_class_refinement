@@ -1,0 +1,22 @@
+weights: /Users/vnareznoy/flying_justice/flying_justice/abductive_class_refinement/rf/runs/bird_drone_clean/weights/best.pt
+scene: Kormoran_Tiefflug.webm, frames 1240..1439 (200 frames, 1920x1080); truth: one bird, no drone
+
+1. detections per frame (imgsz 1280)
+ conf >= | per frame | of them drone
+    0.10 |       7.7 |           6.9
+    0.25 |       3.8 |           3.4
+    0.50 |       1.2 |           1.0
+    0.60 |       0.2 |           0.0
+
+2. association at conf 0.25: 764 detections on 200 frames (3.8/frame) -> 197 candidate tracks -> 4 tracks >= 25 frames
+
+3. ALP on surviving tracks (angular facts after groundability gates)
+   track 0: frames 1240-1294 (43 pts), false track; detector says drone (0.43); grounded facts: none; verdict: unknown  [no_admissible_hypothesis]
+   track 1: frames 1255-1359 (43 pts), BIRD TRACK; detector says bird (0.60); grounded facts: none; verdict: bird  [accepted(bird, not_refuted)]
+   track 2: frames 1280-1439 (140 pts), false track; detector says drone (0.48); grounded facts: none; verdict: unknown  [no_admissible_hypothesis]
+   track 3: frames 1293-1354 (42 pts), false track; detector says drone (0.43); grounded facts: none; verdict: unknown  [no_admissible_hypothesis]
+
+4. positive control, bird track, no detector label: bird  [kinematic_only(wing_beat_oscillation)]
+4. positive control, bird track, detector says drone 0.95 (injected): bird  [revised(drone, refuted_by(flapping_flight), supported_by(wing_beat_oscillation))]
+
+saved 1 false tracks >= 48 frames to reports/decoy_tracks.pkl (protocol P4)

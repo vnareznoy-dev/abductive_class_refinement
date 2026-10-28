@@ -8,3 +8,8 @@ runs/
 *.pt
 *.pdf
 *.mp4
+vid3/
+.DS_Store
+attention/cache/
+attention/fig/
+dut/

@@ -22,13 +22,17 @@ Data: real sequences only.
   drones: the 9 continuous hand-annotated birdrone runs (2738 f) --
           single-object frames, numeric stems, as in flap_specificity.py
 
-Windows of 48 frames (stride 24) per track. TWO protocols:
+Windows of 48 frames (stride 24) per track. FOUR protocols:
 
   P1  leave-one-TRACK-out CV -- the standard optimistic protocol;
   P2  CROSS-DOMAIN: train on cormorant + drone runs 1-5, test on heron +
       drone runs 6-9. The bird the classifier is tested on comes from a video,
       species, background and frame rate it has never seen. Our method takes
       no training, so P2 is where the comparison is meaningful.
+  P3  BOX-NOISE STRESS: models trained on clean P2 training windows, tested on
+      the P2 test windows with Gaussian noise (sigma px) on cx, cy, w, h.
+  P4  DECOYS: false detector tracks on water (alp_on_failures.py, truth: no
+      object) fed to the same models; requires reports/decoy_tracks.pkl.
 
 HONESTY BOX (also printed): bird sample is TINY -- 2 independent tracks, so
 bird-side rates carry Wilson intervals and windows within a track are
@@ -47,6 +51,8 @@ sys.path.insert(0, HERE)
 import flap_real as FR                                   # noqa: E402
 
 WIN, STRIDE = 48, 24
+P3_SIGMAS = (0.0, 0.5, 1.0, 1.5, 2.0, 3.0)
+P3_SEEDS = (7, 11, 23, 42, 77)
 
 
 # ------------------------------------------------------------------ data
@@ -310,6 +316,70 @@ def main():
         pb = wilson(bo, bn); pd = wilson(do, dn)
         print(f"{label:>34s} | {bo:3d}/{bn:<3d} [{100*pb[1]:.0f};{100*pb[2]:.0f}]% "
               f"| {do:3d}/{dn:<3d} [{100*pd[1]:.0f};{100*pd[2]:.0f}]%")
+
+    # -------- P3: box-noise stress (train clean, test noisy) --------
+    print()
+    print("=" * 86)
+    print("П3. СТРЕС ШУМОМ РАМОК: навчання на чистих вікнах П2, тест — ті самі")
+    print("    тестові вікна П2 з гаусовим шумом sigma (пкс) на cx, cy, w, h;")
+    print(f"    {len(P3_SEEDS)} реалізацій шуму, лічба у вікнах x реалізаціях")
+    print("=" * 86)
+    y = np.array([1 if r[0].startswith("bird") else 0 for r in rows])
+    models = {}
+    for label, ff, fx in METHODS:
+        if fx is None:
+            X = np.array([ff(*rows[i]) for i in trn])
+            m = LogReg(); m.fit(X, y[trn]); models[label] = m
+    print(f"{'sigma':>6s} | {'метод':>34s} | {'птах→«птах»':>12s} | {'птах→unknown':>12s} "
+          f"| {'дрон→«птах»':>12s}")
+    print("-" * 90)
+    for sigma in P3_SIGMAS:
+        for label, ff, fx in METHODS:
+            bb = bu = db = nb_ = nd_ = 0
+            for seed in P3_SEEDS:
+                rng = np.random.default_rng(seed)
+                for i in te:
+                    name, fps, a = rows[i]
+                    an = a + rng.normal(0.0, sigma, a.shape) if sigma > 0 else a.copy()
+                    an[:, 2:4] = np.maximum(an[:, 2:4], 1.0)
+                    if fx is None:
+                        p = int(models[label].predict([ff(name, fps, an)])[0])
+                    else:
+                        p = fx(name, fps, an)
+                    if name.startswith("bird"):
+                        nb_ += 1; bb += p; bu += (1 - p) if fx is not None else 0
+                    else:
+                        nd_ += 1; db += p
+            unk = f"{bu:3d}/{nb_:<3d}" if fx is not None else "  немає опції"
+            print(f"{sigma:6.1f} | {label:>34s} | {bb:4d}/{nb_:<5d} | {unk:>12s} | {db:4d}/{nd_:<5d}")
+        print("-" * 90)
+
+    # -------- P4: decoy tracks (truth: no object) ------------------
+    dpath = os.path.join(HERE, "reports/decoy_tracks.pkl")
+    print()
+    print("=" * 86)
+    print("П4. ТРЕКИ-ПУСТИШКИ: хибні треки детектора на воді (alp_on_failures.py),")
+    print("    істина — жодного об'єкта; ті самі моделі, що в П3 (навчання — чисті вікна П2)")
+    print("=" * 86)
+    if not os.path.exists(dpath):
+        print("  немає reports/decoy_tracks.pkl -- спершу запустіть alp_on_failures.py")
+    else:
+        import pickle
+        decoys = pickle.load(open(dpath, "rb"))
+        drows = [w for tr in decoys for w in windows(tr)]
+        print(f"  пустишок: {len(decoys)} треків -> {len(drows)} вікон {WIN} кадрів "
+              f"(вікна одного треку не незалежні)")
+        print(f"{'метод':>34s} | {'«птах»':>7s} | {'«дрон»':>7s} | {'unknown':>8s}")
+        print("-" * 70)
+        for label, ff, fx in METHODS:
+            if fx is None:
+                p = models[label].predict([ff(*r) for r in drows])
+                nb = int(p.sum()); nd = len(p) - nb
+                print(f"{label:>34s} | {nb:3d}/{len(drows):<3d} | {nd:3d}/{len(drows):<3d} | {'немає опції':>8s}")
+            else:
+                nb = sum(fx(*r) for r in drows)
+                print(f"{label:>34s} | {nb:3d}/{len(drows):<3d} | {0:3d}/{len(drows):<3d} | "
+                      f"{len(drows) - nb:3d}/{len(drows):<3d}")
 
     print()
     print("застереження: проксі-реалізації наші, не авторський код; висновок —")

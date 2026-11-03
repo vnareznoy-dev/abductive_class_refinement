@@ -1,0 +1,8 @@
+fps 25 rule full : false bird 0/432 = 0.0%
+fps 25 rule any  : false bird 211/432 = 48.8%
+fps 25 rule major: false bird 0/432 = 0.0%
+fps 25 rule pair : false bird 11/432 = 2.5%
+fps 30 rule full : false bird 7/432 = 1.6%
+fps 30 rule any  : false bird 284/432 = 65.7%
+fps 30 rule major: false bird 7/432 = 1.6%
+fps 30 rule pair : false bird 40/432 = 9.3%

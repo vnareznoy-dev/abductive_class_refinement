@@ -1,0 +1,43 @@
+system run reproduces the E10 ALP holder (US): True
+
+E11: classifier alone vs classifier that asks ALP (correct / wrong / unknown; d->b = drone called bird)
+  bird  alone  n=50 correct  2 wrong  4 unknown 44  asked ALP 0  {'classifier': 50}
+  bird  system n=50 correct  4 wrong  1 unknown 45  asked ALP 50  {'alp:accepted': 1, 'alp:kinematic_only': 3, 'alp:no_admissible_hypothesis': 45, 'alp:revised': 1}
+  uav 6 alone  n=24 correct  5 wrong  1 unknown 18 d->b 1  asked ALP 0  {'classifier': 24}
+  uav 6 system n=24 correct  2 wrong  0 unknown 22 d->b 0  asked ALP 24  {'alp:accepted': 2, 'alp:no_admissible_hypothesis': 22}
+  uav 9 alone  n=24 correct  6 wrong  1 unknown 17 d->b 1  asked ALP 0  {'classifier': 24}
+  uav 9 system n=24 correct  5 wrong  0 unknown 19 d->b 0  asked ALP 24  {'alp:accepted': 5, 'alp:no_admissible_hypothesis': 19}
+  uav 12 alone  n=24 correct  8 wrong  2 unknown 14 d->b 2  asked ALP 0  {'classifier': 24}
+  uav 12 system n=24 correct  6 wrong  0 unknown 18 d->b 0  asked ALP 24  {'alp:accepted': 6, 'alp:no_admissible_hypothesis': 18}
+
+E12: ALP association for the classifier's own tracking (strict run on target %, frames on target %)
+  bird  ours TBD     strict   0.0 (  0-  7)  on target  1.2 % of frames  off-target  7.4 % of held
+  bird  ours TBD+ALP strict   0.0 (  0-  7)  on target  1.2 % of frames  off-target  7.4 % of held
+  bird  v8n  TBD     strict   0.0 (  0-  7)  on target  0.0 % of frames  off-target  0.0 % of held
+  bird  v8n  TBD+ALP strict   0.0 (  0-  7)  on target  0.0 % of frames  off-target  0.0 % of held
+  bird  v8s  TBD     strict   0.0 (  0-  7)  on target  1.1 % of frames  off-target 36.5 % of held
+  bird  v8s  TBD+ALP strict   0.0 (  0-  7)  on target  1.1 % of frames  off-target 36.5 % of held
+  uav 6 ours TBD     strict   4.2 (  1- 20)  on target  9.1 % of frames  off-target  0.0 % of held
+  uav 6 ours TBD+ALP strict   4.2 (  1- 20)  on target  9.1 % of frames  off-target  0.0 % of held
+  uav 6 v8n  TBD     strict   0.0 (  0- 14)  on target  1.0 % of frames  off-target  0.0 % of held
+  uav 6 v8n  TBD+ALP strict   0.0 (  0- 14)  on target  1.0 % of frames  off-target  0.0 % of held
+  uav 6 v8s  TBD     strict   0.0 (  0- 14)  on target  1.6 % of frames  off-target  0.0 % of held
+  uav 6 v8s  TBD+ALP strict   0.0 (  0- 14)  on target  1.6 % of frames  off-target  0.0 % of held
+  uav 9 ours TBD     strict  16.7 (  7- 36)  on target 15.3 % of frames  off-target  0.0 % of held
+  uav 9 ours TBD+ALP strict  16.7 (  7- 36)  on target 15.3 % of frames  off-target  0.0 % of held
+  uav 9 v8n  TBD     strict   0.0 (  0- 14)  on target  1.8 % of frames  off-target  0.0 % of held
+  uav 9 v8n  TBD+ALP strict   0.0 (  0- 14)  on target  1.8 % of frames  off-target  0.0 % of held
+  uav 9 v8s  TBD     strict   4.2 (  1- 20)  on target  3.3 % of frames  off-target  0.0 % of held
+  uav 9 v8s  TBD+ALP strict   4.2 (  1- 20)  on target  3.3 % of frames  off-target  0.0 % of held
+  uav 12 ours TBD     strict  25.0 ( 12- 45)  on target 25.6 % of frames  off-target  0.2 % of held
+  uav 12 ours TBD+ALP strict  25.0 ( 12- 45)  on target 25.3 % of frames  off-target  0.0 % of held
+  uav 12 v8n  TBD     strict   8.3 (  2- 26)  on target  8.8 % of frames  off-target  9.8 % of held
+  uav 12 v8n  TBD+ALP strict   8.3 (  2- 26)  on target  8.8 % of frames  off-target  9.9 % of held
+  uav 12 v8s  TBD     strict  12.5 (  4- 31)  on target 10.7 % of frames  off-target  8.7 % of held
+  uav 12 v8s  TBD+ALP strict  12.5 (  4- 31)  on target 10.7 % of frames  off-target  8.8 % of held
+
+E13: start from a classifier detection (conf >= 0.5) vs start from the reference
+  bird  started 21/50 (median delay 42.0 frames); strict run on target ref start 10/50, detection start 6/21; on target 27 % vs 50 % of frames; system answers after detection start: correct 6
+  uav 6 started 6/24 (median delay 37.0 frames); strict run on target ref start 10/24, detection start 1/6; on target 43 % vs 26 % of frames; system answers after detection start: correct 2, d->b 0
+  uav 9 started 14/24 (median delay 23.5 frames); strict run on target ref start 14/24, detection start 9/14; on target 56 % vs 66 % of frames; system answers after detection start: correct 6, d->b 0
+  uav 12 started 15/24 (median delay 28.0 frames); strict run on target ref start 22/24, detection start 11/15; on target 84 % vs 77 % of frames; system answers after detection start: correct 8, d->b 0

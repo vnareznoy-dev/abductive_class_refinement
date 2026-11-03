@@ -1,0 +1,72 @@
+{
+ "bird_0.5": {
+  "n": 50,
+  "correct": 4,
+  "unknown": 45,
+  "wrong": 1,
+  "d2b": 0
+ },
+ "uav_0.5": {
+  "n": 72,
+  "correct": 13,
+  "unknown": 59,
+  "wrong": 0,
+  "d2b": 0
+ },
+ "bird_0.4": {
+  "n": 50,
+  "correct": 4,
+  "unknown": 41,
+  "wrong": 5,
+  "d2b": 0
+ },
+ "uav_0.4": {
+  "n": 72,
+  "correct": 21,
+  "unknown": 49,
+  "wrong": 2,
+  "d2b": 2
+ },
+ "bird_0.3": {
+  "n": 50,
+  "correct": 12,
+  "unknown": 28,
+  "wrong": 10,
+  "d2b": 0
+ },
+ "uav_0.3": {
+  "n": 72,
+  "correct": 36,
+  "unknown": 30,
+  "wrong": 6,
+  "d2b": 6
+ },
+ "bird_0.25": {
+  "n": 50,
+  "correct": 19,
+  "unknown": 21,
+  "wrong": 10,
+  "d2b": 0
+ },
+ "uav_0.25": {
+  "n": 72,
+  "correct": 39,
+  "unknown": 27,
+  "wrong": 6,
+  "d2b": 6
+ },
+ "bird_alone": {
+  "n": 50,
+  "correct": 2,
+  "unknown": 44,
+  "wrong": 4,
+  "d2b": 0
+ },
+ "uav_alone": {
+  "n": 72,
+  "correct": 19,
+  "unknown": 49,
+  "wrong": 4,
+  "d2b": 4
+ }
+}

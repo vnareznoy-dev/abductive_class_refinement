@@ -1,0 +1,9 @@
+scene: Kormoran 1240-1439, truth: one bird and no other flying object
+detector tracks >= 25 frames: 3; false (not the bird): 2
+
+false track 0 (from frame 1241), att_none: held 0% of 199 frames -> no decision
+false track 0 (from frame 1241), att_self: held 15% of 199 frames -> no decision
+false track 1 (from frame 1279), att_none: held 12% of 161 frames -> no decision
+false track 1 (from frame 1279), att_self: held 41% of 161 frames -> no decision
+
+false decisions: 0 of 4 runs

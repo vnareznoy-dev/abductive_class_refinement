@@ -1,0 +1,10 @@
+Part 1, reference trajectories (Midway camera fixed; DUT camera possibly following)
+  birds 50: heading groundable 33; soaring (no flap) 43, of them groundable 28, circling signature 0, straight-run (drone signature) 0
+  UAV runs 72 (worst case, as if the camera were fixed): groundable 24, circling 0, straight-run 0
+  bird |turn bias| median 0.162 rad/s, turn irreg median 2.047, straight median 0.06
+
+Part 2, system of E11 (positions re-run, identical to v6_runs: True)
+  bird no heading facts                       correct  4 wrong  1 unknown 45  {'accepted': 1, 'kinematic_only': 3, 'no_admissible_hypothesis': 45, 'revised': 1}
+  bird heading facts                          correct  4 wrong  1 unknown 45 | groundable 11, circling 0, straight 0  {'accepted': 1, 'kinematic_only': 3, 'no_admissible_hypothesis': 45, 'revised': 1}
+  uav  no heading facts                       correct 13 wrong  0 unknown 59 drone->bird 0  {'accepted': 13, 'no_admissible_hypothesis': 59}
+  uav  heading facts (worst case for UAV)     correct 13 wrong  0 unknown 59 drone->bird 0 | groundable 11, circling 0, straight 0  {'accepted': 13, 'no_admissible_hypothesis': 59}

@@ -1,0 +1,9 @@
+tbd                on 1 | run 0 | flash 8 | corr 0 [0;7] | wrong 0 | none 100
+att_none           on 43 | run 92 | flash 46 | corr 34 [22;48] | wrong 24 | none 42
+att_contrast_self  on 32 | run 71 | flash 35 | corr 26 [16;40] | wrong 20 | none 54
+att_self           on 44 | run 92 | flash 47 | corr 34 [22;48] | wrong 28 | none 38
+att_self_oracle    on 50 | run 94 | flash 58 | corr 40 [28;54] | wrong 24 | none 36
+att_ext0.2Hz       on 45 | run 94 | flash 48 | corr 36 [24;50] | wrong 26 | none 38
+att_ext1Hz         on 51 | run 95 | flash 54 | corr 40 [28;54] | wrong 26 | none 34
+McNemar att_none vs ext1Hz(seed7): виграв 3, програв 0
+McNemar att_none vs self: виграв 0, програв 0

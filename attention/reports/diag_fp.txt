@@ -1,0 +1,2 @@
+UAV (DUT, 9 px, series at TRUE position): windows 2020, per-window firing 7.3 %, segments with any window firing 6/24
+Birds (Midway, series at TRUE position): windows 2976, per-window firing 37.1 %, tracks with any window firing 45/50

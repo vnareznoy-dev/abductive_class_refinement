@@ -1,0 +1,39 @@
+alp=False reproduces the main run: True (854/854)
+Prolog theory agrees with the Python decisions on 1526/1526 sampled frames
+
+bird
+  att_none   base strict  36.0 ( 24- 50)  off-target 43.5 % of  4704 held  decisions on target 2, other 4
+  att_none   ALP strict  18.0 ( 10- 31)  off-target 21.5 % of  1989 held  decisions on target 1, other 1
+  att_self   base strict  38.0 ( 26- 52)  off-target 51.7 % of  5643 held  decisions on target 2, other 6
+  att_self   ALP strict  20.0 ( 11- 33)  off-target 48.1 % of  3111 held  decisions on target 1, other 3
+  att_ext1Hz base strict  43.6 ( 38- 50)  off-target 45.1 % of 28681 held  decisions on target 19, other 23
+  att_ext1Hz ALP strict  26.4 ( 21- 32)  off-target 36.2 % of 17764 held  decisions on target 14, other 9
+
+uav 6
+  att_none   base strict  41.7 ( 24- 61)  off-target 34.4 % of  2913 held  false 'bird' 0
+  att_none   ALP strict  41.7 ( 24- 61)  off-target 26.2 % of  2265 held  false 'bird' 0
+  att_self   base strict  45.8 ( 28- 65)  off-target 40.2 % of  3525 held  false 'bird' 0
+  att_self   ALP strict  41.7 ( 24- 61)  off-target 29.3 % of  2693 held  false 'bird' 0
+  att_ext1Hz base strict  47.5 ( 39- 56)  off-target 47.6 % of 20736 held  false 'bird' 0
+  att_ext1Hz ALP strict  45.0 ( 36- 54)  off-target 35.2 % of 16120 held  false 'bird' 0
+
+uav 9
+  att_none   base strict  45.8 ( 28- 65)  off-target 41.3 % of  3458 held  false 'bird' 0
+  att_none   ALP strict  54.2 ( 35- 72)  off-target 19.1 % of  2634 held  false 'bird' 0
+  att_self   base strict  50.0 ( 31- 69)  off-target 44.2 % of  4049 held  false 'bird' 0
+  att_self   ALP strict  58.3 ( 39- 76)  off-target 27.5 % of  3263 held  false 'bird' 0
+  att_ext1Hz base strict  47.5 ( 39- 56)  off-target 48.8 % of 21182 held  false 'bird' 0
+  att_ext1Hz ALP strict  60.8 ( 52- 69)  off-target 30.8 % of 17253 held  false 'bird' 0
+
+uav 12
+  att_none   base strict  87.5 ( 69- 96)  off-target 20.6 % of  3997 held  false 'bird' 0
+  att_none   ALP strict  87.5 ( 69- 96)  off-target  8.3 % of  3622 held  false 'bird' 0
+  att_self   base strict  87.5 ( 69- 96)  off-target 24.4 % of  4292 held  false 'bird' 0
+  att_self   ALP strict  91.7 ( 74- 98)  off-target 13.1 % of  4076 held  false 'bird' 0
+  att_ext1Hz base strict  87.5 ( 80- 92)  off-target 25.4 % of 21460 held  false 'bird' 0
+  att_ext1Hz ALP strict  88.3 ( 81- 93)  off-target 14.4 % of 20117 held  false 'bird' 0
+
+labels US base v1 fixed rule    birds: bird  6 drone 15 unknown 29 | UAV: drone 36 bird 0 unknown 36
+labels US base priority + bank  birds: bird 14 drone 13 unknown 23 | UAV: drone 35 bird 3 unknown 34
+labels US ALP  v1 fixed rule    birds: bird  2 drone  8 unknown 40 | UAV: drone 38 bird 0 unknown 34
+labels US ALP  priority + bank  birds: bird 14 drone  4 unknown 32 | UAV: drone 37 bird 1 unknown 34

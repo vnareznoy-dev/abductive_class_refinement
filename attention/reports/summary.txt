@@ -1,0 +1,41 @@
+evaluation set: 50 tracks (Midway, far objects 4-12 px), 6343 frames
+
+E1. classifier confidence at the true position (full frame, imgsz 640, gate 45 px)
+ size, px tracks | cov@0.5 med  hole med  win48 | cov@0.25 med  hole med  win48 | cov@0.1 med  hole med  win48
+   4-6         4 |        0%       108   0/4   |        8%        53   0/4   |       34%        14   0/4  
+   7-9        25 |        0%       107   0/25  |       11%        51   0/25  |       44%        16   1/25 
+  10-12       20 |        0%       100   0/20  |       15%        33   0/20  |       57%        14   2/20 
+   4-12       50 |        0%       106   0/50  |       11%        50   0/50  |       46%        16   3/50 
+  cov = share of frames with a detection >= threshold; hole = longest run of frames without;
+  win48 = tracks with >= 48 consecutive detected frames (a gap-free series for the spectral test)
+  classifier flashes (conf >= 0.25) per track: median 14; tracking-by-detection splits them into median 3 fragments (max 7) -- each fragment is a new object for the system
+
+E2. visibility in the attention window (threshold from a 120x120 window)
+   4-6   : all frames 99% (median), inside detector holes @0.1 99%, longest invisible run median 0, max 7
+   7-9   : all frames 99% (median), inside detector holes @0.1 100%, longest invisible run median 1, max 5
+  10-12  : all frames 100% (median), inside detector holes @0.1 100%, longest invisible run median 0, max 17
+   4-12  : all frames 99% (median), inside detector holes @0.1 100%, longest invisible run median 1, max 17
+
+E3. closed-loop holding (all 50 tracks; ext modes averaged over 5 cue-noise seeds)
+              mode | on target | longest run med |   decided |   correct | wrong obj
+               tbd |        1% |               0 |        0% |        0% |        0%
+          att_none |       43% |              92 |       58% |       34% |       24%
+ att_contrast_self |       32% |              71 |       46% |       26% |       20%
+          att_self |       44% |              92 |       62% |       34% |       28%
+   att_self_oracle |       50% |              94 |       64% |       40% |       24%
+      att_ext0.2Hz |       45% |              94 |       62% |       36% |       26%
+        att_ext1Hz |       51% |              95 |       66% |       40% |       26%
+  share of classifier flashes attributed to the held target (on target at the flash frame):
+               tbd: 8% (mean over tracks)
+          att_none: 46% (mean over tracks)
+          att_self: 47% (mean over tracks)
+    att_self_oracle: 58% (mean over tracks)
+      att_ext0.2Hz: 48% (mean over tracks)
+  on target = share of frames where the held point is < 25 px from the true one;
+  decided = a gap-free 48-frame window of the held series fires the spectral test;
+  correct = that window is >= 50 % on target; wrong obj = decided on something else
+
+E3 by size (att_self | att_ext0.2Hz | att_none): decided correctly
+  4-6 px: att_self 0% | att_self_oracle 0% | att_ext0.2Hz 0% | att_none 0%
+  7-9 px: att_self 40% | att_self_oracle 44% | att_ext0.2Hz 40% | att_none 40%
+  10-12 px: att_self 30% | att_self_oracle 40% | att_ext0.2Hz 35% | att_none 30%

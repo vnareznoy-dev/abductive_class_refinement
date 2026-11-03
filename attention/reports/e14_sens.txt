@@ -1,0 +1,12 @@
+E14: classifier -> ALP, trust threshold of the classifier label (det_trust)
+
+T=0.5  bird n=50 correct  4 wrong  1 unknown 45
+T=0.5  uav  n=72 correct 13 wrong  0 unknown 59  drone->bird 0
+T=0.4  bird n=50 correct  4 wrong  5 unknown 41
+T=0.4  uav  n=72 correct 21 wrong  2 unknown 49  drone->bird 2
+T=0.3  bird n=50 correct 12 wrong 10 unknown 28
+T=0.3  uav  n=72 correct 36 wrong  6 unknown 30  drone->bird 6
+T=0.25 bird n=50 correct 19 wrong 10 unknown 21
+T=0.25 uav  n=72 correct 39 wrong  6 unknown 27  drone->bird 6
+classifier alone bird: {'n': 50, 'correct': 2, 'unknown': 44, 'wrong': 4, 'd2b': 0}
+classifier alone uav: {'n': 72, 'correct': 19, 'unknown': 49, 'wrong': 4, 'd2b': 4}

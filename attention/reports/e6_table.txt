@@ -1,0 +1,76 @@
+class res model mode n | coverage c>=0.25 (median) | run>=48 on target, % (95% CI) | frames on target, % | bird: decision on target / UAV: false bird
+bird   640 ours tbd           50 |    11% |     0 (  0-  7) |     1% | 0/50
+bird   640 ours bytetrack     50 |    11% |     0 (  0-  7) |     2% | 0/50
+bird   640 ours botsort       50 |    11% |     2 (  0- 10) |     3% | 0/50
+bird   640 ours att_self      50 |    11% |    38 ( 26- 52) |    44% | 2/50
+bird   640 v8n  tbd           50 |     1% |     0 (  0-  7) |     0% | 0/50
+bird   640 v8n  bytetrack     50 |     1% |     0 (  0-  7) |     1% | 0/50
+bird   640 v8n  botsort       50 |     1% |     0 (  0-  7) |     1% | 0/50
+bird   640 v8n  att_self      50 |     1% |    36 ( 24- 50) |    43% | 2/50
+bird   640 v8s  tbd           50 |     4% |     0 (  0-  7) |     1% | 0/50
+bird   640 v8s  bytetrack     50 |     4% |     0 (  0-  7) |     1% | 0/50
+bird   640 v8s  botsort       50 |     4% |     0 (  0-  7) |     1% | 0/50
+bird   640 v8s  att_self      50 |     4% |    36 ( 24- 50) |    43% | 2/50
+bird   640 -    att_none      50 |   nan% |    36 ( 24- 50) |    43% | 2/50
+bird   640 -    att_ext1Hz   250 |   nan% |    44 ( 38- 50) |    51% | 19/250
+
+bird  1920 ours tbd           50 |    49% |     0 (  0-  7) |    10% | 0/50
+bird  1920 ours bytetrack     50 |    49% |     0 (  0-  7) |     5% | 0/50
+bird  1920 ours botsort       50 |    49% |     0 (  0-  7) |     5% | 0/50
+bird  1920 ours att_self      50 |    49% |    36 ( 24- 50) |    44% | 2/50
+bird  1920 v8n  tbd           50 |    70% |     6 (  2- 16) |    19% | 0/50
+bird  1920 v8n  bytetrack     50 |    70% |     0 (  0-  7) |     5% | 0/50
+bird  1920 v8n  botsort       50 |    70% |     0 (  0-  7) |     6% | 0/50
+bird  1920 v8n  att_self      50 |    70% |    38 ( 26- 52) |    46% | 2/50
+bird  1920 v8s  tbd           50 |    79% |    10 (  4- 21) |    22% | 1/50
+bird  1920 v8s  bytetrack     50 |    79% |     0 (  0-  7) |     6% | 0/50
+bird  1920 v8s  botsort       50 |    79% |     0 (  0-  7) |     8% | 0/50
+bird  1920 v8s  att_self      50 |    79% |    36 ( 24- 50) |    44% | 2/50
+bird  1920 -    att_none      50 |   nan% |    36 ( 24- 50) |    43% | 2/50
+bird  1920 -    att_ext1Hz   250 |   nan% |    44 ( 38- 50) |    51% | 19/250
+
+uav      6 ours tbd           24 |    12% |     4 (  1- 20) |     9% | 0/24
+uav      6 ours bytetrack     24 |    12% |    21 (  9- 40) |    21% | 0/24
+uav      6 ours botsort       24 |    12% |    21 (  9- 40) |    21% | 0/24
+uav      6 ours att_self      24 |    12% |    46 ( 28- 65) |    48% | 0/24
+uav      6 v8n  tbd           24 |     0% |     0 (  0- 14) |     1% | 0/24
+uav      6 v8n  bytetrack     24 |     0% |     0 (  0- 14) |     1% | 0/24
+uav      6 v8n  botsort       24 |     0% |     0 (  0- 14) |     1% | 0/24
+uav      6 v8n  att_self      24 |     0% |    42 ( 24- 61) |    46% | 0/24
+uav      6 v8s  tbd           24 |     0% |     0 (  0- 14) |     2% | 0/24
+uav      6 v8s  bytetrack     24 |     0% |     0 (  0- 14) |     2% | 0/24
+uav      6 v8s  botsort       24 |     0% |     0 (  0- 14) |     2% | 0/24
+uav      6 v8s  att_self      24 |     0% |    42 ( 24- 61) |    46% | 0/24
+uav      6 -    att_none      24 |   nan% |    42 ( 24- 61) |    45% | 0/24
+uav      6 -    att_ext1Hz   120 |   nan% |    48 ( 39- 56) |    51% | 0/120
+
+uav      9 ours tbd           24 |    50% |    17 (  7- 36) |    15% | 0/24
+uav      9 ours bytetrack     24 |    50% |    46 ( 28- 65) |    34% | 1/24
+uav      9 ours botsort       24 |    50% |    42 ( 24- 61) |    31% | 1/24
+uav      9 ours att_self      24 |    50% |    50 ( 31- 69) |    53% | 0/24
+uav      9 v8n  tbd           24 |     0% |     0 (  0- 14) |     2% | 0/24
+uav      9 v8n  bytetrack     24 |     0% |     8 (  2- 26) |     6% | 0/24
+uav      9 v8n  botsort       24 |     0% |     4 (  1- 20) |     3% | 0/24
+uav      9 v8n  att_self      24 |     0% |    46 ( 28- 65) |    50% | 0/24
+uav      9 v8s  tbd           24 |     3% |     4 (  1- 20) |     3% | 0/24
+uav      9 v8s  bytetrack     24 |     3% |     4 (  1- 20) |     7% | 0/24
+uav      9 v8s  botsort       24 |     3% |     0 (  0- 14) |     4% | 0/24
+uav      9 v8s  att_self      24 |     3% |    50 ( 31- 69) |    51% | 0/24
+uav      9 -    att_none      24 |   nan% |    46 ( 28- 65) |    49% | 0/24
+uav      9 -    att_ext1Hz   120 |   nan% |    48 ( 39- 56) |    52% | 0/120
+
+uav     12 ours tbd           24 |    46% |    25 ( 12- 45) |    26% | 1/24
+uav     12 ours bytetrack     24 |    46% |    42 ( 24- 61) |    31% | 1/24
+uav     12 ours botsort       24 |    46% |    46 ( 28- 65) |    35% | 2/24
+uav     12 ours att_self      24 |    46% |    88 ( 69- 96) |    80% | 0/24
+uav     12 v8n  tbd           24 |     2% |     8 (  2- 26) |     9% | 0/24
+uav     12 v8n  bytetrack     24 |     2% |    12 (  4- 31) |     9% | 0/24
+uav     12 v8n  botsort       24 |     2% |    12 (  4- 31) |    10% | 0/24
+uav     12 v8n  att_self      24 |     2% |    92 ( 74- 98) |    81% | 0/24
+uav     12 v8s  tbd           24 |    19% |    12 (  4- 31) |    11% | 0/24
+uav     12 v8s  bytetrack     24 |    19% |    25 ( 12- 45) |    17% | 0/24
+uav     12 v8s  botsort       24 |    19% |    25 ( 12- 45) |    20% | 0/24
+uav     12 v8s  att_self      24 |    19% |    92 ( 74- 98) |    82% | 0/24
+uav     12 -    att_none      24 |   nan% |    88 ( 69- 96) |    79% | 0/24
+uav     12 -    att_ext1Hz   120 |   nan% |    88 ( 80- 92) |    80% | 0/120
+

@@ -1,0 +1,11 @@
+Part 1, reference series: birds 50 (soaring = criterion not fired: 43), UAV runs 61
+  bank   AUC birds vs UAV 0.88, soaring birds vs UAV 0.88; quartiles soaring birds [0.237, 0.33, 0.431], UAV [0.078, 0.123, 0.19]
+  elong  AUC birds vs UAV 0.58, soaring birds vs UAV 0.59; quartiles soaring birds [1.364, 1.5, 1.667], UAV [1.25, 1.5, 1.5]
+
+Part 2, held series of variant B: birds 50, UAV runs 72; units with a run >= 48: 109
+  rule 'bank': birds rule fired 7/50, UAV rule fired 3/72 (= drones that would be called birds)
+     birds  fused v1 {'bird': 6, 'drone': 15, 'unknown': 29}  ->  v2 {'bird': 14, 'drone': 13, 'unknown': 23}
+     UAV    fused v1 {'bird': 0, 'drone': 36, 'unknown': 36}  ->  v2 {'bird': 3, 'drone': 35, 'unknown': 34}
+  rule 'elong': birds rule fired 0/50, UAV rule fired 2/72 (= drones that would be called birds)
+     birds  fused v1 {'bird': 6, 'drone': 15, 'unknown': 29}  ->  v2 {'bird': 8, 'drone': 15, 'unknown': 27}
+     UAV    fused v1 {'bird': 0, 'drone': 36, 'unknown': 36}  ->  v2 {'bird': 2, 'drone': 35, 'unknown': 35}

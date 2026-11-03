@@ -1,0 +1,20 @@
+Strict measure: longest gap-free run >= 48 frames and >= 50 % of it on target.
+
+bird СЗВ, 640               n= 50 strict   0.0 (0-7)  loose   0.0  on  1.2
+bird СЗВ, 1920, поріг 0,1   n= 50 strict  16.0 (8-29)  loose  26.0  on 21.2
+bird У0                     n= 50 strict  36.0 (24-50)  loose  74.0  on 43.4
+bird УК                     n= 50 strict  36.0 (24-50)  loose  74.0  on 32.3
+bird УС                     n= 50 strict  38.0 (26-52)  loose  84.0  on 44.3
+bird УС-О                   n= 50 strict  44.0 (31-58)  loose  84.0  on 50.2
+bird УЗ-0,2                 n=250 strict  38.0 (32-44)  loose  79.6  on 45.3
+bird УЗ-1                   n=250 strict  43.6 (38-50)  loose  85.2  on 50.5
+
+uav  6 px СЗВ   n= 24 strict   4.2 (1-20)  loose   4.2  on  9.1
+uav  6 px У0    n= 24 strict  41.7 (24-61)  loose  75.0  on 44.9
+uav  6 px УЗ-1  n=120 strict  47.5 (39-56)  loose  98.3  on 50.6
+uav  9 px СЗВ   n= 24 strict  16.7 (7-36)  loose  16.7  on 15.3
+uav  9 px У0    n= 24 strict  45.8 (28-65)  loose  87.5  on 49.2
+uav  9 px УЗ-1  n=120 strict  47.5 (39-56)  loose 100.0  on 51.6
+uav 12 px СЗВ   n= 24 strict  25.0 (12-45)  loose  25.0  on 25.6
+uav 12 px У0    n= 24 strict  87.5 (69-96)  loose  95.8  on 79.1
+uav 12 px УЗ-1  n=120 strict  87.5 (80-92)  loose 100.0  on 79.5

@@ -1,0 +1,20 @@
+BIRDS, 50 tracks (ext modes: 250 runs). measurable = held run >= 48; full-rule decisions
+  ideal (truth)      on-target 100% | measurable 100% [93–100] | bird on target  14% [7–26] | other obj   0% | none  86%
+  tbd                on-target   1% | measurable   0% [0–7] | bird on target   0% [0–7] | other obj   0% | none 100%
+  att_none           on-target  43% | measurable  74% [60–84] | bird on target   4% [1–13] | other obj   8% | none  88%
+  att_contrast_self  on-target  32% | measurable  74% [60–84] | bird on target   2% [0–10] | other obj   4% | none  94%
+  att_self           on-target  44% | measurable  84% [71–92] | bird on target   4% [1–13] | other obj  12% | none  84%
+  att_ext0.2Hz       on-target  45% | measurable  80% [74–84] | bird on target   4% [2–7] | other obj   8% | none  88%
+  att_ext1Hz         on-target  51% | measurable  85% [80–89] | bird on target   8% [5–12] | other obj   9% | none  83%
+  tbd native1920 @0.25: measurable 0/50 | bird on target 0/50 | other 0/50
+  tbd native1920 @0.1: measurable 13/50 | bird on target 1/50 | other 1/50
+UAVs (24 open-sky segments; ext: 120 runs): measurable, FALSE bird (full rule / any-window rule)
+   6 px tbd         on-target   9% | measurable   4% [1–20] | false bird full 0/24 [0–14] | any 4%
+   6 px att_none    on-target  45% | measurable  75% [55–88] | false bird full 0/24 [0–14] | any 46%
+   6 px att_ext1Hz  on-target  51% | measurable  98% [94–100] | false bird full 0/120 [-0–3] | any 59%
+   9 px tbd         on-target  15% | measurable  17% [7–36] | false bird full 0/24 [0–14] | any 4%
+   9 px att_none    on-target  49% | measurable  88% [69–96] | false bird full 0/24 [0–14] | any 29%
+   9 px att_ext1Hz  on-target  52% | measurable 100% [97–100] | false bird full 0/120 [-0–3] | any 38%
+  12 px tbd         on-target  26% | measurable  25% [12–45] | false bird full 1/24 [1–20] | any 21%
+  12 px att_none    on-target  79% | measurable  96% [80–99] | false bird full 0/24 [0–14] | any 50%
+  12 px att_ext1Hz  on-target  80% | measurable 100% [97–100] | false bird full 0/120 [-0–3] | any 54%

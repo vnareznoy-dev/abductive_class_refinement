@@ -1,0 +1,12 @@
+drone runs: 6, frames: 2630
+
+run 1 (64 frames): drone_none:-(3%)  drone_ext:-(16%)  background:-(3%)  background:-(0%)  background:-(3%)  background:-(2%)  background:-(6%)
+run 2 (429 frames): drone_none:-(0%)  drone_ext:-(17%)  background:-(1%)  background:-(1%)  background:-(1%)  background:-(2%)  background:-(7%)
+run 3 (620 frames): drone_none:-(1%)  drone_ext:-(19%)  background:-(0%)  background:-(0%)  background:-(0%)  background:-(0%)  background:-(1%)
+run 4 (209 frames): drone_none:-(0%)  drone_ext:-(13%)  background:-(1%)  background:-(0%)  background:-(0%)  background:-(0%)  background:-(1%)
+run 5 (204 frames): drone_none:-(0%)  drone_ext:-(20%)  background:-(1%)  background:-(2%)  background:-(0%)  background:-(0%)  background:-(0%)
+run 6 (1104 frames): drone_none:-(0%)  drone_ext:-(18%)  background:-(0%)  background:-(0%)  background:-(1%)  background:-(1%)  background:-(0%)
+
+false 'bird' decisions, drone_none: 0 of 6 held series
+false 'bird' decisions, drone_ext: 0 of 6 held series
+false 'bird' decisions, background: 0 of 30 held series

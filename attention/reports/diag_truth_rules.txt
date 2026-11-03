@@ -1,0 +1,4 @@
+birds at TRUE position, rule full : fired 7/50
+birds at TRUE position, rule any  : fired 45/50
+birds at TRUE position, rule major: fired 16/50
+birds at TRUE position, rule pair : fired 18/50

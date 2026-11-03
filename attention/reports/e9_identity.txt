@@ -1,0 +1,38 @@
+identity=False reproduces the main run: True (854/854)
+
+bird
+  att_none   base strict  36.0 ( 24- 50)  off-target 43.5 % of  4704 held  decisions on target 2, other 4
+  att_none   ID  strict  18.0 ( 10- 31)  off-target 37.7 % of  2770 held  decisions on target 3, other 0
+  att_self   base strict  38.0 ( 26- 52)  off-target 51.7 % of  5643 held  decisions on target 2, other 6
+  att_self   ID  strict  18.0 ( 10- 31)  off-target 56.2 % of  4263 held  decisions on target 3, other 0
+  att_ext1Hz base strict  43.6 ( 38- 50)  off-target 45.1 % of 28681 held  decisions on target 19, other 23
+  att_ext1Hz ID  strict  22.4 ( 18- 28)  off-target 46.1 % of 22825 held  decisions on target 15, other 2
+
+uav 6
+  att_none   base strict  41.7 ( 24- 61)  off-target 34.4 % of  2913 held  false 'bird' 0
+  att_none   ID  strict  45.8 ( 28- 65)  off-target 30.2 % of  2798 held  false 'bird' 1
+  att_self   base strict  45.8 ( 28- 65)  off-target 40.2 % of  3525 held  false 'bird' 0
+  att_self   ID  strict  45.8 ( 28- 65)  off-target 34.9 % of  3382 held  false 'bird' 0
+  att_ext1Hz base strict  47.5 ( 39- 56)  off-target 47.6 % of 20736 held  false 'bird' 0
+  att_ext1Hz ID  strict  50.0 ( 41- 59)  off-target 41.3 % of 19746 held  false 'bird' 0
+
+uav 9
+  att_none   base strict  45.8 ( 28- 65)  off-target 41.3 % of  3458 held  false 'bird' 0
+  att_none   ID  strict  45.8 ( 28- 65)  off-target 37.7 % of  3176 held  false 'bird' 0
+  att_self   base strict  50.0 ( 31- 69)  off-target 44.2 % of  4049 held  false 'bird' 0
+  att_self   ID  strict  54.2 ( 35- 72)  off-target 40.6 % of  3845 held  false 'bird' 0
+  att_ext1Hz base strict  47.5 ( 39- 56)  off-target 48.8 % of 21182 held  false 'bird' 0
+  att_ext1Hz ID  strict  53.3 ( 44- 62)  off-target 45.7 % of 20375 held  false 'bird' 0
+
+uav 12
+  att_none   base strict  87.5 ( 69- 96)  off-target 20.6 % of  3997 held  false 'bird' 0
+  att_none   ID  strict  79.2 ( 60- 91)  off-target 16.9 % of  3590 held  false 'bird' 0
+  att_self   base strict  87.5 ( 69- 96)  off-target 24.4 % of  4292 held  false 'bird' 0
+  att_self   ID  strict  79.2 ( 60- 91)  off-target 21.3 % of  3920 held  false 'bird' 0
+  att_ext1Hz base strict  87.5 ( 80- 92)  off-target 25.4 % of 21460 held  false 'bird' 0
+  att_ext1Hz ID  strict  79.2 ( 71- 85)  off-target 24.1 % of 20357 held  false 'bird' 0
+
+labels US base v1 fixed rule    birds: bird  6 drone 15 unknown 29 | UAV: drone 36 bird 0 unknown 36
+labels US base priority + bank  birds: bird 14 drone 13 unknown 23 | UAV: drone 35 bird 3 unknown 34
+labels US ID   v1 fixed rule    birds: bird  0 drone  9 unknown 41 | UAV: drone 37 bird 0 unknown 35
+labels US ID   priority + bank  birds: bird  7 drone  7 unknown 36 | UAV: drone 37 bird 2 unknown 33

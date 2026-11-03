@@ -1,0 +1,86 @@
+{
+ "bird_meas_СЗВ\n640": [
+  0,
+  50
+ ],
+ "bird_meas_СЗВ\n1920": [
+  13,
+  50
+ ],
+ "bird_meas_У0": [
+  37,
+  50
+ ],
+ "bird_meas_УС": [
+  42,
+  50
+ ],
+ "bird_meas_УЗ-1": [
+  213,
+  250
+ ],
+ "bird_meas_еталон": [
+  50,
+  50
+ ],
+ "uav_meas_6_СЗВ": [
+  1,
+  24
+ ],
+ "uav_meas_6_У0": [
+  18,
+  24
+ ],
+ "uav_meas_6_УЗ-1": [
+  118,
+  120
+ ],
+ "uav_meas_9_СЗВ": [
+  4,
+  24
+ ],
+ "uav_meas_9_У0": [
+  21,
+  24
+ ],
+ "uav_meas_9_УЗ-1": [
+  120,
+  120
+ ],
+ "uav_meas_12_СЗВ": [
+  6,
+  24
+ ],
+ "uav_meas_12_У0": [
+  23,
+  24
+ ],
+ "uav_meas_12_УЗ-1": [
+  120,
+  120
+ ],
+ "rule_any": {
+  "bird_truth": 90.0,
+  "bird_att_on_target": 34.0,
+  "uav_false_bird": 48.842592592592595,
+  "uav_n": 432
+ },
+ "rule_pair": {
+  "bird_truth": 36.0,
+  "bird_att_on_target": 6.0,
+  "uav_false_bird": 2.5462962962962963,
+  "uav_n": 432
+ },
+ "rule_major": {
+  "bird_truth": 32.0,
+  "bird_att_on_target": 10.0,
+  "uav_false_bird": 0.0,
+  "uav_n": 432
+ },
+ "rule_full": {
+  "bird_truth": 14.000000000000002,
+  "bird_att_on_target": 4.0,
+  "uav_false_bird": 0.0,
+  "uav_n": 432
+ }
+}

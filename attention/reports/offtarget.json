@@ -1,0 +1,30 @@
+{
+ "series_identical_to_main_run": true,
+ "att_none": {
+  "held_frames": 4704,
+  "off_target": 2046,
+  "off_other_bird": 830,
+  "share_off": 0.43494897959183676,
+  "share_other_bird_of_off": 0.4056695992179863,
+  "decisions_other": 4,
+  "decisions_other_bird": 1
+ },
+ "att_self": {
+  "held_frames": 5643,
+  "off_target": 2915,
+  "off_other_bird": 1172,
+  "share_off": 0.5165692007797271,
+  "share_other_bird_of_off": 0.4020583190394511,
+  "decisions_other": 6,
+  "decisions_other_bird": 3
+ },
+ "att_ext1Hz": {
+  "held_frames": 28681,
+  "off_target": 12926,
+  "off_other_bird": 4990,
+  "share_off": 0.45068163592622296,
+  "share_other_bird_of_off": 0.38604363298777655,
+  "decisions_other": 23,
+  "decisions_other_bird": 6
+ }
+}

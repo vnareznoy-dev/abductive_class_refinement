@@ -1,0 +1,97 @@
+ours segment 1
+ours segment 2
+ours segment 3
+ours segment 4
+ours segment 5
+ours segment 6
+ours segment 7
+ours segment 8
+ours segment 9
+ours segment 10
+ours segment 11
+ours segment 12
+ours segment 13
+ours segment 14
+ours segment 15
+ours segment 16
+ours segment 17
+ours segment 18
+ours segment 19
+ours segment 20
+ours segment 21
+ours segment 22
+ours segment 23
+ours segment 24
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_uav_ours.pkl
+reused det_midway.pkl -> /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_ours_640.pkl
+reused det_midway_1920.pkl -> /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_ours_1920.pkl
+v8n segment 1
+v8n segment 2
+v8n segment 3
+v8n segment 4
+v8n segment 5
+v8n segment 6
+v8n segment 7
+v8n segment 8
+v8n segment 9
+v8n segment 10
+v8n segment 11
+v8n segment 12
+v8n segment 13
+v8n segment 14
+v8n segment 15
+v8n segment 16
+v8n segment 17
+v8n segment 18
+v8n segment 19
+v8n segment 20
+v8n segment 21
+v8n segment 22
+v8n segment 23
+v8n segment 24
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_uav_v8n.pkl
+v8n 640 500 / 2442
+v8n 640 1000 / 2442
+v8n 640 1500 / 2442
+v8n 640 2000 / 2442
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_v8n_640.pkl
+v8n 1920 500 / 2442
+v8n 1920 1000 / 2442
+v8n 1920 1500 / 2442
+v8n 1920 2000 / 2442
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_v8n_1920.pkl
+v8s segment 1
+v8s segment 2
+v8s segment 3
+v8s segment 4
+v8s segment 5
+v8s segment 6
+v8s segment 7
+v8s segment 8
+v8s segment 9
+v8s segment 10
+v8s segment 11
+v8s segment 12
+v8s segment 13
+v8s segment 14
+v8s segment 15
+v8s segment 16
+v8s segment 17
+v8s segment 18
+v8s segment 19
+v8s segment 20
+v8s segment 21
+v8s segment 22
+v8s segment 23
+v8s segment 24
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_uav_v8s.pkl
+v8s 640 500 / 2442
+v8s 640 1000 / 2442
+v8s 640 1500 / 2442
+v8s 640 2000 / 2442
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_v8s_640.pkl
+v8s 1920 500 / 2442
+v8s 1920 1000 / 2442
+v8s 1920 1500 / 2442
+v8s 1920 2000 / 2442
+saved /Users/vnareznoy/flying_justice/flying_justice/article4/cache/e6_det_bird_v8s_1920.pkl

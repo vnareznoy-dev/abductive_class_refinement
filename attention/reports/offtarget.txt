@@ -1,0 +1,5 @@
+series identical to main run: True
+
+att_none    held   4704  off target   2046 (43 % of held)  of them near another tracked bird 830 (41 %)  decisions on another object 4, of them on another tracked bird 1
+att_self    held   5643  off target   2915 (52 % of held)  of them near another tracked bird 1172 (40 %)  decisions on another object 6, of them on another tracked bird 3
+att_ext1Hz  held  28681  off target  12926 (45 % of held)  of them near another tracked bird 4990 (39 %)  decisions on another object 23, of them on another tracked bird 6

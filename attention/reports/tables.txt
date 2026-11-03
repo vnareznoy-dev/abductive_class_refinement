@@ -1,0 +1,21 @@
+TABLE1 (E1)
+4–6 4 0 | 108 | 0/4 || 8 | 53 | 0/4 || 34 | 14 | 0/4 || flashes med 8.5 frag med 2.5 max 5.0 frames 429
+7–9 26 0 | 110 | 0/26 || 11 | 50 | 0/26 || 45 | 16 | 1/26 || flashes med 13.5 frag med 3.0 max 7.0 frames 3255
+10–12 20 0 | 100 | 0/20 || 15 | 33 | 0/20 || 57 | 14 | 2/20 || flashes med 21.0 frag med 4.0 max 7.0 frames 2659
+4–12 50 0 | 106 | 0/50 || 11 | 50 | 0/50 || 46 | 16 | 3/50 || flashes med 14.0 frag med 3.0 max 7.0 frames 6343
+TABLE2 (E2)
+4–6 4 vis med 99 min 86 | holes med 99 min 82 | longest invisible med 0 max 7 | hole frames total 290
+7–9 26 vis med 99 min 93 | holes med 99 min 95 | longest invisible med 1 max 5 | hole frames total 1698
+10–12 20 vis med 100 min 87 | holes med 100 min 62 | longest invisible med 0 max 17 | hole frames total 1197
+4–12 50 vis med 99 min 86 | holes med 100 min 62 | longest invisible med 1 max 17 | hole frames total 3185
+TABLE3 (E3)
+tbd 50 on 1 | run med 0 | flash 8 | decided 0 | correct 0 | wrong 0 | none 100
+att_none 50 on 43 | run med 92 | flash 46 | decided 58 | correct 34 | wrong 24 | none 42
+att_contrast_self 50 on 35 | run med 72 | flash 43 | decided 48 | correct 28 | wrong 20 | none 52
+att_self 50 on 50 | run med 94 | flash 58 | decided 64 | correct 40 | wrong 24 | none 36
+att_ext0.2Hz 250 on 45 | run med 94 | flash 48 | decided 62 | correct 36 | wrong 26 | none 38
+att_ext1Hz 250 on 51 | run med 95 | flash 54 | decided 66 | correct 40 | wrong 26 | none 34
+TABLE3b correct by size
+4–6 att_none 0% (n=4) | att_self 0% (n=4) | att_ext0.2Hz 0% (n=20) | att_ext1Hz 0% (n=20)
+7–9 att_none 42% (n=26) | att_self 46% (n=26) | att_ext0.2Hz 42% (n=130) | att_ext1Hz 42% (n=130)
+10–12 att_none 30% (n=20) | att_self 40% (n=20) | att_ext0.2Hz 35% (n=100) | att_ext1Hz 45% (n=100)

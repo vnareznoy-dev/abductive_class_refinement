@@ -1,0 +1,4 @@
+det_midway.pkl       thr 0.25: on-target 1% | longest run med 0 | series>=48 0/50 | decided 0/50 | correct 0/50 | wrong 0/50
+det_midway.pkl       thr 0.1: on-target 6% | longest run med 1 | series>=48 0/50 | decided 0/50 | correct 0/50 | wrong 0/50
+det_midway_1920.pkl  thr 0.25: on-target 10% | longest run med 3 | series>=48 0/50 | decided 0/50 | correct 0/50 | wrong 0/50
+det_midway_1920.pkl  thr 0.1: on-target 21% | longest run med 26 | series>=48 13/50 | decided 4/50 | correct 2/50 | wrong 2/50

@@ -1,0 +1,22 @@
+Primary rule: full (one test on the longest gap-free held run, as in Article 3).
+
+BIRDS (50 Midway tracks): decided on target / on another object / no decision, %
+              mode |              full |               any |             major |              pair
+          att_none |       4 /  8 / 88 |      34 / 24 / 42 |      10 / 10 / 80 |       6 /  2 / 92
+          att_self |       4 / 12 / 84 |      34 / 28 / 38 |      10 / 14 / 76 |       6 /  2 / 92
+      att_ext0.2Hz |       4 /  8 / 88 |      36 / 26 / 38 |      10 /  9 / 81 |       6 /  2 / 92
+        att_ext1Hz |       8 /  9 / 83 |      40 / 26 / 34 |      14 / 11 / 75 |       8 /  2 / 90
+ att_contrast_self |       2 /  4 / 94 |      26 / 20 / 54 |       4 /  2 / 94 |       4 /  2 / 94
+               tbd |       0 /  0 /100 |       0 /  0 /100 |       0 /  0 /100 |       0 /  0 /100
+
+UAVs (DUT, open-sky segments): FALSE 'bird' decisions, % of held series
+        size, mode |    full |     any |   major |    pair | measurable (run>=48)
+     6 px att_none |      0% |     46% |      0% |      4% | 75% (n=24)
+   6 px att_ext1Hz |      0% |     59% |      0% |      5% | 98% (n=120)
+          6 px tbd |      0% |      4% |      0% |      0% | 4% (n=24)
+     9 px att_none |      0% |     29% |      0% |      0% | 88% (n=24)
+   9 px att_ext1Hz |      0% |     38% |      0% |      3% | 100% (n=120)
+          9 px tbd |      0% |      4% |      0% |      0% | 17% (n=24)
+    12 px att_none |      0% |     50% |      0% |      0% | 96% (n=24)
+  12 px att_ext1Hz |      0% |     54% |      0% |      0% | 100% (n=120)
+         12 px tbd |      4% |     21% |      8% |      0% | 25% (n=24)

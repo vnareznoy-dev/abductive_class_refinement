@@ -1,0 +1,47 @@
+E7: does the attention method help the classifier? (correct / wrong / unknown, %; 'd->b' = drone labelled bird)
+
+bird 640: n=50  visibility median full frame 10 %, window crop 1 %
+   classifier, perfect association (reference)    label correct  28.0  wrong  34.0  unknown  38.0  votes median 12
+   A classifier + TBD                             label correct   4.0  wrong   8.0  unknown  88.0  votes median 0
+   A classifier + TBD                             fused correct   0.0  wrong   8.0  unknown  92.0  votes median 0
+   B classifier + window                          label correct  22.0  wrong  34.0  unknown  44.0  votes median 11
+   B classifier + window                          fused correct  12.0  wrong  30.0  unknown  58.0  votes median 11
+   C classifier + window + crop                   label correct   4.0  wrong  46.0  unknown  50.0  votes median 5
+   C classifier + window + crop                   fused correct  10.0  wrong  42.0  unknown  48.0  votes median 5
+
+bird 1920: n=50  visibility median full frame 44 %, window crop 1 %
+   classifier, perfect association (reference)    label correct  14.0  wrong  52.0  unknown  34.0  votes median 56
+   A classifier + TBD                             label correct  12.0  wrong  24.0  unknown  64.0  votes median 4
+   A classifier + TBD                             fused correct   0.0  wrong  24.0  unknown  76.0  votes median 4
+   B classifier + window                          label correct  24.0  wrong  40.0  unknown  36.0  votes median 40
+   B classifier + window                          fused correct  12.0  wrong  34.0  unknown  54.0  votes median 40
+   C classifier + window + crop                   label correct   4.0  wrong  46.0  unknown  50.0  votes median 5
+   C classifier + window + crop                   fused correct  10.0  wrong  42.0  unknown  48.0  votes median 5
+
+drone 6: n=24  visibility median full frame 12 %, window crop 64 %
+   classifier, perfect association (reference)    label correct  50.0  wrong   4.2  unknown  45.8  d->b 1  votes median 24
+   A classifier + TBD                             label correct  20.8  wrong   4.2  unknown  75.0  d->b 1  votes median 0
+   A classifier + TBD                             fused correct  20.8  wrong   0.0  unknown  79.2  d->b 0  votes median 0
+   B classifier + window                          label correct  33.3  wrong   4.2  unknown  62.5  d->b 1  votes median 0
+   B classifier + window                          fused correct  33.3  wrong   0.0  unknown  66.7  d->b 0  votes median 0
+   C classifier + window + crop                   label correct  50.0  wrong   4.2  unknown  45.8  d->b 1  votes median 34
+   C classifier + window + crop                   fused correct  50.0  wrong   0.0  unknown  50.0  d->b 0  votes median 34
+
+drone 9: n=24  visibility median full frame 50 %, window crop 71 %
+   classifier, perfect association (reference)    label correct  66.7  wrong   8.3  unknown  25.0  d->b 2  votes median 68
+   A classifier + TBD                             label correct  25.0  wrong   4.2  unknown  70.8  d->b 1  votes median 0
+   A classifier + TBD                             fused correct  25.0  wrong   0.0  unknown  75.0  d->b 0  votes median 0
+   B classifier + window                          label correct  54.2  wrong   8.3  unknown  37.5  d->b 2  votes median 16
+   B classifier + window                          fused correct  54.2  wrong   0.0  unknown  45.8  d->b 0  votes median 16
+   C classifier + window + crop                   label correct  41.7  wrong  16.7  unknown  41.7  d->b 4  votes median 60
+   C classifier + window + crop                   fused correct  41.7  wrong   0.0  unknown  58.3  d->b 0  votes median 60
+
+drone 12: n=24  visibility median full frame 46 %, window crop 89 %
+   classifier, perfect association (reference)    label correct  66.7  wrong  12.5  unknown  20.8  d->b 3  votes median 90
+   A classifier + TBD                             label correct  33.3  wrong   8.3  unknown  58.3  d->b 2  votes median 0
+   A classifier + TBD                             fused correct  29.2  wrong   0.0  unknown  70.8  d->b 0  votes median 0
+   B classifier + window                          label correct  62.5  wrong  12.5  unknown  25.0  d->b 3  votes median 70
+   B classifier + window                          fused correct  62.5  wrong   0.0  unknown  37.5  d->b 0  votes median 70
+   C classifier + window + crop                   label correct  54.2  wrong  33.3  unknown  12.5  d->b 8  votes median 98
+   C classifier + window + crop                   fused correct  54.2  wrong   0.0  unknown  45.8  d->b 0  votes median 98
+

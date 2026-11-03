@@ -1,7 +1,7 @@
 {
-  "title": "Abductive class refinement for airborne objects: code and reports for the article on the groundability principle of perceptual facts",
+  "title": "Abductive class refinement and attention holding for small aerial targets: code, reports and derived data",
   "upload_type": "software",
-  "description": "Reference implementation, reproduction scripts and saved reports for the article \"Abductive refinement of the airborne object class based on the groundability principle of perceptual facts\" (V. Yu. Nareznoy, Odesa Polytechnic National University). A logical fact about an observed object is asserted only when it is measurable by the available camera; an abductive logic program combines the neural detector label with kinematic and silhouette facts and returns a verdict with an explanation or a justified abstention. Third-party datasets and videos are not redistributed; their sources and licenses are listed in README.md.",
+  "description": "Reference implementation, reproduction scripts, saved reports and derived data for the articles of V. Yu. Nareznoy (Odesa Polytechnic National University): (3) \"Abductive refinement of the airborne object class based on the groundability principle of perceptual facts\"; (4a) \"Separating the holding and decision thresholds for tracking small aerial targets in protection against unmanned aerial vehicles\"; (4b) \"Abductive identity of a small aerial target for refining the labels of a neural network classifier\". Article 3 code is in the repository root, articles 4a/4b in attention/. Third-party datasets and videos are not redistributed; sources and licenses are listed in README.md and attention/README.md.",
   "creators": [
     {
       "name": "Nareznoy, Volodymyr",
@@ -12,10 +12,13 @@
   "license": "MIT",
   "keywords": [
     "abductive logic programming",
-    "neuro-symbolic AI",
-    "symbol grounding",
+    "abstention",
+    "attention window",
     "bird and UAV discrimination",
-    "wing-beat detection",
-    "abstention"
+    "neuro-symbolic AI",
+    "small target tracking",
+    "symbol grounding",
+    "target identity",
+    "wing-beat detection"
   ]
 }

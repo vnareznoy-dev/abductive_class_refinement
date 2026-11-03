@@ -1,0 +1,70 @@
+{
+ "p1_bank": {
+  "auc_all": 0.8826229508196721,
+  "auc_soar": 0.8837209302325582
+ },
+ "p1_elong": {
+  "auc_all": 0.5804918032786885,
+  "auc_soar": 0.5922607701105604
+ },
+ "p2_bank": {
+  "bird": {
+   "n": 50,
+   "rule_fired": 7,
+   "v1": {
+    "bird": 6,
+    "drone": 15,
+    "unknown": 29
+   },
+   "v2": {
+    "bird": 14,
+    "drone": 13,
+    "unknown": 23
+   }
+  },
+  "uav": {
+   "n": 72,
+   "rule_fired": 3,
+   "v1": {
+    "bird": 0,
+    "drone": 36,
+    "unknown": 36
+   },
+   "v2": {
+    "bird": 3,
+    "drone": 35,
+    "unknown": 34
+   }
+  }
+ },
+ "p2_elong": {
+  "bird": {
+   "n": 50,
+   "rule_fired": 0,
+   "v1": {
+    "bird": 6,
+    "drone": 15,
+    "unknown": 29
+   },
+   "v2": {
+    "bird": 8,
+    "drone": 15,
+    "unknown": 27
+   }
+  },
+  "uav": {
+   "n": 72,
+   "rule_fired": 2,
+   "v1": {
+    "bird": 0,
+    "drone": 36,
+    "unknown": 36
+   },
+   "v2": {
+    "bird": 2,
+    "drone": 35,
+    "unknown": 35
+   }
+  }
+ }
+}

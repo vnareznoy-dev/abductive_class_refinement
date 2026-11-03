@@ -1,0 +1,31 @@
+segments on open sky: 24 (4337 frames) from sequences [1, 3, 4, 5, 6, 8, 9, 12, 16, 18, 19, 20]
+  segment 1/24 done (video01, 131 frames)
+  segment 2/24 done (video01, 300 frames)
+  segment 3/24 done (video03, 100 frames)
+  segment 4/24 done (video04, 129 frames)
+  segment 5/24 done (video05, 300 frames)
+  segment 6/24 done (video05, 113 frames)
+  segment 7/24 done (video06, 197 frames)
+  segment 8/24 done (video08, 286 frames)
+  segment 9/24 done (video08, 168 frames)
+  segment 10/24 done (video09, 195 frames)
+  segment 11/24 done (video09, 300 frames)
+  segment 12/24 done (video12, 249 frames)
+  segment 13/24 done (video12, 141 frames)
+  segment 14/24 done (video16, 104 frames)
+  segment 15/24 done (video16, 141 frames)
+  segment 16/24 done (video18, 167 frames)
+  segment 17/24 done (video18, 300 frames)
+  segment 18/24 done (video18, 166 frames)
+  segment 19/24 done (video19, 196 frames)
+  segment 20/24 done (video20, 98 frames)
+  segment 21/24 done (video20, 123 frames)
+  segment 22/24 done (video20, 168 frames)
+  segment 23/24 done (video20, 133 frames)
+  segment 24/24 done (video20, 132 frames)
+E5 drones (DUT Anti-UAV): 24 open-sky segments, 4337 frames, sequences [1, 3, 4, 5, 6, 8, 9, 12, 16, 18, 19, 20]
+
+ S, px | cov@0.5 cov@0.25 cov@0.1 | win48 @0.25/@0.1 | label drone | window vis |  held on target (none/ext1) |  series>=48 (tbd/none/ext1) | false bird (none/ext1)
+     6 |      0%      12%     27% |   4/24   10/24      |         90% |        85% |           45% /  51%       | 1/24 18/24 98%            | 11/24 71/120
+     9 |      8%      50%     73% |  12/24   15/24      |         88% |        98% |           49% /  52%       | 4/24 21/24 100%            | 7/24 45/120
+    12 |      3%      46%     78% |   9/24   14/24      |         82% |       100% |           79% /  80%       | 6/24 23/24 100%            | 12/24 65/120

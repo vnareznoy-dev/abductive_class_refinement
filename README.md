@@ -108,6 +108,13 @@ python3 test_theory.py               # 16/16 theory cases
 python3 features.py                  # measurability gates on synthetic birds
 ```
 
+## Articles 4a and 4b
+
+The attention-holding and abductive-identity experiments of the follow-up articles
+(4a: separating the holding and decision thresholds; 4b: abductive identity of a small
+aerial target for refining classifier labels) are in [`attention/`](attention/README.md),
+with their own reproducibility map. Version for these articles: tag `v1.0-article4`.
+
 ## License
 
 MIT (code). Datasets and videos keep their authors' licenses listed above;

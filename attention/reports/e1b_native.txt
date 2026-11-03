@@ -1,0 +1,10 @@
+det_midway.pkl
+  4-6    n= 4 cov 0/8/34%  hole 108/53/14  win48 0/0/0 of 4
+  7-9    n=26 cov 0/11/45%  hole 110/50/16  win48 0/0/1 of 26
+  10-12  n=20 cov 0/15/57%  hole 100/33/14  win48 0/0/2 of 20
+  4-12   n=50 cov 0/11/46%  hole 106/50/16  win48 0/0/3 of 50
+det_midway_1920.pkl
+  4-6    n= 4 cov 3/47/89%  hole 72/12/4  win48 0/0/1 of 4
+  7-9    n=26 cov 7/46/89%  hole 53/14/3  win48 0/0/12 of 26
+  10-12  n=20 cov 7/52/92%  hole 51/11/4  win48 0/1/12 of 20
+  4-12   n=50 cov 7/49/90%  hole 54/14/3  win48 0/1/25 of 50

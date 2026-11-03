@@ -1,0 +1,54 @@
+rule: len >= 96, median mask 4-12 px, straightness >= 0.8
+candidates: 50; after duplicate removal: 50
+visual check (reports/sheets): every tile of every track shows a bird in the sky; in some frames a neighbouring bird passes through the tile, so a track may partly pass between neighbouring birds (identity is not guaranteed)
+evaluation set: 50 tracks
+  track    2: frames 2010-2226, 199 pts, mask 12 px, straightness 0.87
+  track    1: frames 1671-1870, 194 pts, mask 8 px, straightness 0.92
+  track    7: frames 1568-1756, 189 pts, mask 10 px, straightness 0.80
+  track    8: frames 2386-2559, 164 pts, mask 10 px, straightness 0.91
+  track    9: frames 1965-2131, 159 pts, mask 10 px, straightness 0.92
+  track   10: frames 984-1158, 159 pts, mask 10 px, straightness 0.89
+  track   15: frames 896-1053, 150 pts, mask 9 px, straightness 0.88
+  track   19: frames 2466-2639, 149 pts, mask 7 px, straightness 0.84
+  track   11: frames 1945-2095, 148 pts, mask 10 px, straightness 0.94
+  track   22: frames 961-1113, 147 pts, mask 12 px, straightness 0.85
+  track   13: frames 1523-1675, 145 pts, mask 8 px, straightness 0.93
+  track   14: frames 1801-1941, 141 pts, mask 9 px, straightness 0.96
+  track   12: frames 445-592, 140 pts, mask 9 px, straightness 0.97
+  track   32: frames 48-203, 139 pts, mask 11 px, straightness 0.81
+  track   21: frames 2411-2558, 138 pts, mask 8 px, straightness 0.90
+  track   24: frames 1166-1313, 137 pts, mask 8 px, straightness 0.89
+  track   17: frames 1175-1311, 136 pts, mask 11 px, straightness 0.95
+  track   41: frames 2505-2639, 131 pts, mask 11 px, straightness 0.81
+  track   23: frames 610-741, 128 pts, mask 12 px, straightness 0.95
+  track   25: frames 318-452, 128 pts, mask 9 px, straightness 0.95
+  track   28: frames 191-320, 126 pts, mask 9 px, straightness 0.94
+  track   35: frames 432-566, 124 pts, mask 12 px, straightness 0.89
+  track   31: frames 1455-1584, 122 pts, mask 7 px, straightness 0.93
+  track   30: frames 614-736, 119 pts, mask 7 px, straightness 0.97
+  track   70: frames 1389-1541, 119 pts, mask 9 px, straightness 0.81
+  track   73: frames 1884-2006, 118 pts, mask 8 px, straightness 0.81
+  track   33: frames 1516-1633, 117 pts, mask 10 px, straightness 0.96
+  track   49: frames 1314-1441, 117 pts, mask 9 px, straightness 0.89
+  track   38: frames 1031-1152, 116 pts, mask 7 px, straightness 0.95
+  track   44: frames 26-158, 116 pts, mask 6 px, straightness 0.91
+  track   62: frames 1527-1653, 116 pts, mask 10 px, straightness 0.86
+  track   37: frames 1931-2046, 115 pts, mask 12 px, straightness 0.96
+  track   54: frames 799-923, 115 pts, mask 9 px, straightness 0.90
+  track   76: frames 1956-2076, 115 pts, mask 6 px, straightness 0.83
+  track   57: frames 261-375, 114 pts, mask 7 px, straightness 0.90
+  track   53: frames 86-197, 111 pts, mask 11 px, straightness 0.93
+  track   65: frames 1996-2106, 110 pts, mask 12 px, straightness 0.89
+  track   48: frames 1404-1516, 109 pts, mask 12 px, straightness 0.96
+  track   79: frames 2169-2278, 108 pts, mask 12 px, straightness 0.86
+  track  100: frames 1010-1122, 107 pts, mask 7 px, straightness 0.80
+  track   63: frames 793-899, 105 pts, mask 7 px, straightness 0.95
+  track   85: frames 78-201, 104 pts, mask 9 px, straightness 0.86
+  track   87: frames 358-462, 103 pts, mask 8 px, straightness 0.86
+  track   83: frames 833-939, 102 pts, mask 6 px, straightness 0.89
+  track  113: frames 648-756, 101 pts, mask 9 px, straightness 0.83
+  track  118: frames 1907-2026, 101 pts, mask 10 px, straightness 0.82
+  track   68: frames 0-101, 100 pts, mask 8 px, straightness 0.97
+  track   69: frames 1781-1880, 99 pts, mask 9 px, straightness 0.98
+  track  137: frames 449-549, 97 pts, mask 11 px, straightness 0.82
+  track   88: frames 106-203, 96 pts, mask 5 px, straightness 0.92

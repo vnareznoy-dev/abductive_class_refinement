@@ -1,7 +1,7 @@
 {
   "title": "Abductive class refinement and attention holding for small aerial targets: code, reports and derived data",
   "upload_type": "software",
-  "description": "Reference implementation, reproduction scripts, saved reports and derived data for the articles of V. Yu. Nareznoy (Odesa Polytechnic National University): (3) \"Abductive refinement of the airborne object class based on the groundability principle of perceptual facts\"; (4a) \"Separating the holding and decision thresholds for tracking small aerial targets in protection against unmanned aerial vehicles\"; (4b) \"Abductive identity of a small aerial target for refining the labels of a neural network classifier\". Article 3 code is in the repository root, articles 4a/4b in attention/. Third-party datasets and videos are not redistributed; sources and licenses are listed in README.md and attention/README.md.",
+  "description": "Reference implementation, reproduction scripts, saved reports and derived data for the articles of V. Yu. Nareznoy (Odesa Polytechnic National University): (3) \"Abductive refinement of the airborne object class based on the groundability principle of perceptual facts\"; (4a) \"Separating the target holding thresholds and the abductive class decision for tracking small aerial targets in protection against unmanned aerial vehicles\"; (4b) \"Abductive identity of small aerial targets for refining neural network classifier labels\". Article 3 code is in the repository root, articles 4a/4b in attention/. Third-party datasets and videos are not redistributed; sources and licenses are listed in README.md and attention/README.md. Version v1.1-article4 adds the recomputation of articles 4a/4b with the size-relative on-target tolerance r = 2L, the working-range and visibility experiments, the Anti-UAV check and the scripts of the English figures (see attention/README.md).",
   "creators": [
     {
       "name": "Nareznoy, Volodymyr",
@@ -20,5 +20,6 @@
     "symbol grounding",
     "target identity",
     "wing-beat detection"
-  ]
+  ],
+  "version": "v1.1-article4"
 }

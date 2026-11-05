@@ -1,0 +1,1 @@
+track 17, seed 7: frame index 40 (video frame 1244); L_t = 23.00 px; chosen b1 at 3.26 px, admissible others at [12.79, 15.55] px, refuted b2 at 23.48 px (a separate fragment of the fragmented silhouette, likely the target's wing tip); frames with a refuted neighbour: 47 of 108

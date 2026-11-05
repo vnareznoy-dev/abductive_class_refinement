@@ -1,0 +1,9 @@
+E22 working range vs target size L (24 DUT segments; median over segments for shares of frames; strict = % of segments)
+
+  L= 4 n=24: frame median 91x51 | coverage c>=0.25 median   0 % | visibility median   1 % | strict СЗВ   8 %  У0   8 % (2-26)
+  L= 6 n=24: frame median 137x77 | coverage c>=0.25 median  12 % | visibility median  25 % | strict СЗВ   4 %  У0  12 % (4-31)
+  L= 9 n=24: frame median 206x116 | coverage c>=0.25 median  50 % | visibility median  87 % | strict СЗВ  17 %  У0  33 % (18-53)
+  L=12 n=24: frame median 274x154 | coverage c>=0.25 median  46 % | visibility median 100 % | strict СЗВ  25 %  У0  83 % (64-93)
+  L=16 n=24: frame median 366x206 | coverage c>=0.25 median  52 % | visibility median 100 % | strict СЗВ  25 %  У0  92 % (74-98)
+  L=24 n=24: frame median 549x309 | coverage c>=0.25 median  71 % | visibility median 100 % | strict СЗВ  29 %  У0  96 % (80-99)
+  L=32 n=24: frame median 731x411 | coverage c>=0.25 median  80 % | visibility median 100 % | strict СЗВ  33 %  У0  96 % (80-99)

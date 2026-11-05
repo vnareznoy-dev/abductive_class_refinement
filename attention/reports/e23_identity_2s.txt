@@ -1,0 +1,34 @@
+E23 identity article Table 1: off-target % of held frames | strict run on target (count/n, %)
+
+bird 
+  att_none   base | 25 px: off  43.5 % strict  18/50 (36.0 %) | 2L: off  48.3 % strict  16/50 (32.0 %)
+  att_none   ALP  | 25 px: off  21.5 % strict   9/50 (18.0 %) | 2L: off  28.1 % strict   8/50 (16.0 %)
+  att_self   base | 25 px: off  51.7 % strict  19/50 (38.0 %) | 2L: off  55.8 % strict  17/50 (34.0 %)
+  att_self   ALP  | 25 px: off  48.1 % strict  10/50 (20.0 %) | 2L: off  52.8 % strict   8/50 (16.0 %)
+  att_ext1Hz base | 25 px: off  45.1 % strict 109/250 (43.6 %) | 2L: off  49.2 % strict  99/250 (39.6 %)
+  att_ext1Hz ALP  | 25 px: off  36.2 % strict  66/250 (26.4 %) | 2L: off  40.3 % strict  61/250 (24.4 %)
+
+uav 6
+  att_none   base | 25 px: off  34.4 % strict  10/24 (41.7 %) | 2L: off  79.7 % strict   3/24 (12.5 %)
+  att_none   ALP  | 25 px: off  26.2 % strict  10/24 (41.7 %) | 2L: off  74.8 % strict   3/24 (12.5 %)
+  att_self   base | 25 px: off  40.2 % strict  11/24 (45.8 %) | 2L: off  80.8 % strict   3/24 (12.5 %)
+  att_self   ALP  | 25 px: off  29.3 % strict  10/24 (41.7 %) | 2L: off  73.6 % strict   3/24 (12.5 %)
+  att_ext1Hz base | 25 px: off  47.6 % strict  57/120 (47.5 %) | 2L: off  83.2 % strict  15/120 (12.5 %)
+  att_ext1Hz ALP  | 25 px: off  35.2 % strict  54/120 (45.0 %) | 2L: off  75.0 % strict  18/120 (15.0 %)
+
+uav 9
+  att_none   base | 25 px: off  41.3 % strict  11/24 (45.8 %) | 2L: off  53.9 % strict   8/24 (33.3 %)
+  att_none   ALP  | 25 px: off  19.1 % strict  13/24 (54.2 %) | 2L: off  32.0 % strict  11/24 (45.8 %)
+  att_self   base | 25 px: off  44.2 % strict  12/24 (50.0 %) | 2L: off  58.5 % strict   8/24 (33.3 %)
+  att_self   ALP  | 25 px: off  27.5 % strict  14/24 (58.3 %) | 2L: off  42.6 % strict  11/24 (45.8 %)
+  att_ext1Hz base | 25 px: off  48.8 % strict  57/120 (47.5 %) | 2L: off  60.4 % strict  40/120 (33.3 %)
+  att_ext1Hz ALP  | 25 px: off  30.8 % strict  73/120 (60.8 %) | 2L: off  44.5 % strict  56/120 (46.7 %)
+
+uav 12
+  att_none   base | 25 px: off  20.6 % strict  21/24 (87.5 %) | 2L: off  22.8 % strict  20/24 (83.3 %)
+  att_none   ALP  | 25 px: off   8.3 % strict  21/24 (87.5 %) | 2L: off  10.6 % strict  20/24 (83.3 %)
+  att_self   base | 25 px: off  24.4 % strict  21/24 (87.5 %) | 2L: off  26.6 % strict  20/24 (83.3 %)
+  att_self   ALP  | 25 px: off  13.1 % strict  22/24 (91.7 %) | 2L: off  15.3 % strict  21/24 (87.5 %)
+  att_ext1Hz base | 25 px: off  25.4 % strict 105/120 (87.5 %) | 2L: off  27.5 % strict 100/120 (83.3 %)
+  att_ext1Hz ALP  | 25 px: off  14.4 % strict 106/120 (88.3 %) | 2L: off  16.7 % strict 101/120 (84.2 %)
+

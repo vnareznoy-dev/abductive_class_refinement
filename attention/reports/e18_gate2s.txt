@@ -1,0 +1,22 @@
+E18 Table 2 with on-target gate 25 px (article) and 2*S (S = median target size); post-hoc
+
+BIRDS: strict run on target | on-target bird decision (rule full)
+  tbd         25px  strict 0/50 (0 %, 0-7)  decision on target 0/50 (0 %, 0-7)
+  tbd         2S    strict 0/50 (0 %, 0-7)  decision on target 0/50 (0 %, 0-7)
+  tbd1920     25px  strict 8/50 (16 %, 8-29)  decision on target 1/50 (2 %, 0-10)
+  tbd1920     2S    strict 8/50 (16 %, 8-29)  decision on target 1/50 (2 %, 0-10)
+  att_none    25px  strict 18/50 (36 %, 24-50)  decision on target 2/50 (4 %, 1-13)
+  att_none    2S    strict 16/50 (32 %, 21-46)  decision on target 2/50 (4 %, 1-13)
+  att_ext1Hz  25px  strict 109/250 (44 %, 38-50)  decision on target 19/250 (8 %, 5-12)
+  att_ext1Hz  2S    strict 99/250 (40 %, 34-46)  decision on target 19/250 (8 %, 5-12)
+
+UAVs: strict run on target | false bird (rule full, independent of gate)
+  tbd          6 px  25px 1/24 (4 %, 1-20)  2S 1/24 (4 %, 1-20)  false bird 0/24
+  tbd          9 px  25px 4/24 (17 %, 7-36)  2S 4/24 (17 %, 7-36)  false bird 0/24
+  tbd         12 px  25px 6/24 (25 %, 12-45)  2S 6/24 (25 %, 12-45)  false bird 1/24
+  att_none     6 px  25px 10/24 (42 %, 24-61)  2S 3/24 (12 %, 4-31)  false bird 0/24
+  att_none     9 px  25px 11/24 (46 %, 28-65)  2S 8/24 (33 %, 18-53)  false bird 0/24
+  att_none    12 px  25px 21/24 (88 %, 69-96)  2S 20/24 (83 %, 64-93)  false bird 0/24
+  att_ext1Hz   6 px  25px 57/120 (48 %, 39-56)  2S 15/120 (12 %, 8-20)  false bird 0/120
+  att_ext1Hz   9 px  25px 57/120 (48 %, 39-56)  2S 40/120 (33 %, 26-42)  false bird 0/120
+  att_ext1Hz  12 px  25px 105/120 (88 %, 80-92)  2S 100/120 (83 %, 76-89)  false bird 0/120

@@ -1,0 +1,6 @@
+E21 bird size, 50 tracks (median over tracks; min-max of track medians), native 1920x1080 px
+  track size used in the article (dark mask, a4_select): median 9 (5-12)
+  dark mask re-measured (window threshold):            median 12 (6-24)
+  full extent, dark + white parts:                     median 27 (13-86)
+  ratio full / dark mask: median 2.1
+  at the classifier input imgsz 640 (/3): dark 4.1 px, full 9.0 px

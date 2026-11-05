@@ -1,0 +1,6 @@
+E24 E13 with tolerance 2L: share of frames on target (mean over units), reference start / detection start
+
+  bird  started 21/50 | 25 px: 27 / 50 | 2L: 25 / 49
+  uav 6 started 6/24 | 25 px: 43 / 26 | 2L: 20 / 23
+  uav 9 started 14/24 | 25 px: 56 / 66 | 2L: 47 / 53
+  uav 12 started 15/24 | 25 px: 84 / 77 | 2L: 83 / 76

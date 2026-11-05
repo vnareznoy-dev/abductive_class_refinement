@@ -1,0 +1,11 @@
+E20 visibility at the true position, 50 Midway tracks (median over tracks, min-max)
+
+WINDOW, gate 25 px  : median  99.3 %  min  86.1  max 100.0
+WINDOW, gate 2S     : median  98.6 %  min  76.5  max 100.0
+GLOBAL, gate 25 px  : median   0.7 %  min   0.0  max  16.0
+GLOBAL, gate 2S     : median   0.0 %  min   0.0  max  13.2
+
+E20b UAV visibility at the true position (WINDOW threshold), median over segments (min)
+   6 px: gate 25 px median  84.7 % (min 6) | gate 2S median  25.0 % (min 0)
+   9 px: gate 25 px median  97.7 % (min 7) | gate 2S median  87.0 % (min 4)
+  12 px: gate 25 px median 100.0 % (min 79) | gate 2S median 100.0 % (min 73)

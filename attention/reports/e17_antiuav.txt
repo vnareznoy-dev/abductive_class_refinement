@@ -1,0 +1,17 @@
+E17 Anti-UAV RGB (tracking camera, HUD inpainted, day only; post-hoc)
+
+open: 167 segments
+   6 px (n=167): cov@0.25 median 0 % | vis median 87 % | strict 25px TBD 21/167 (13 %, 8-18) U0 86/167 (51 %, 44-59) UZ-1 486/835 (58 %, 55-62) | strict 2S U0 62/167 (37 %, 30-45) UZ-1 337/835 (40 %, 37-44) | false bird full U0 0/167 UZ-1 0/835 TBD 0/167 | any U0 0/167 UZ-1 0/835
+   9 px (n=167): cov@0.25 median 1 % | vis median 100 % | strict 25px TBD 7/167 (4 %, 2-8) U0 122/167 (73 %, 66-79) UZ-1 642/835 (77 %, 74-80) | strict 2S U0 114/167 (68 %, 61-75) UZ-1 607/835 (73 %, 70-76) | false bird full U0 0/167 UZ-1 0/835 TBD 0/167 | any U0 0/167 UZ-1 0/835
+  12 px (n=167): cov@0.25 median 4 % | vis median 100 % | strict 25px TBD 6/167 (4 %, 2-8) U0 144/167 (86 %, 80-91) UZ-1 724/835 (87 %, 84-89) | strict 2S U0 143/167 (86 %, 80-90) UZ-1 722/835 (86 %, 84-89) | false bird full U0 0/167 UZ-1 0/835 TBD 0/167 | any U0 1/167 UZ-1 5/835
+
+textured: 33 segments
+   6 px (n=33): cov@0.25 median 0 % | vis median 89 % | strict 25px TBD 0/33 (0 %, 0-10) U0 17/33 (52 %, 35-67) UZ-1 95/165 (58 %, 50-65) | strict 2S U0 8/33 (24 %, 13-41) UZ-1 45/165 (27 %, 21-35) | false bird full U0 0/33 UZ-1 0/165 TBD 0/33 | any U0 0/33 UZ-1 0/165
+   9 px (n=33): cov@0.25 median 0 % | vis median 97 % | strict 25px TBD 0/33 (0 %, 0-10) U0 17/33 (52 %, 35-67) UZ-1 83/165 (50 %, 43-58) | strict 2S U0 14/33 (42 %, 27-59) UZ-1 68/165 (41 %, 34-49) | false bird full U0 0/33 UZ-1 0/165 TBD 0/33 | any U0 0/33 UZ-1 0/165
+  12 px (n=33): cov@0.25 median 0 % | vis median 98 % | strict 25px TBD 0/33 (0 %, 0-10) U0 23/33 (70 %, 53-83) UZ-1 119/165 (72 %, 65-78) | strict 2S U0 22/33 (67 %, 50-80) UZ-1 114/165 (69 %, 62-76) | false bird full U0 0/33 UZ-1 0/165 TBD 0/33 | any U0 0/33 UZ-1 0/165
+
+notdark: 29 segments
+   6 px (n=29): cov@0.25 median 19 % | vis median 15 % | strict 25px TBD 6/29 (21 %, 10-38) U0 7/29 (24 %, 12-42) UZ-1 35/145 (24 %, 18-32) | strict 2S U0 2/29 (7 %, 2-22) UZ-1 10/145 (7 %, 4-12) | false bird full U0 0/29 UZ-1 0/145 TBD 0/29 | any U0 0/29 UZ-1 0/145
+   9 px (n=29): cov@0.25 median 56 % | vis median 72 % | strict 25px TBD 3/29 (10 %, 4-26) U0 10/29 (34 %, 20-53) UZ-1 50/145 (34 %, 27-43) | strict 2S U0 6/29 (21 %, 10-38) UZ-1 30/145 (21 %, 15-28) | false bird full U0 0/29 UZ-1 0/145 TBD 0/29 | any U0 0/29 UZ-1 0/145
+  12 px (n=29): cov@0.25 median 51 % | vis median 85 % | strict 25px TBD 6/29 (21 %, 10-38) U0 14/29 (48 %, 31-66) UZ-1 72/145 (50 %, 42-58) | strict 2S U0 14/29 (48 %, 31-66) UZ-1 72/145 (50 %, 42-58) | false bird full U0 0/29 UZ-1 0/145 TBD 0/29 | any U0 0/29 UZ-1 0/145
+

@@ -65,6 +65,32 @@ reports in `attention/reports/` (re-run logs `*.log` are included).
 | Rejected alternative: identity by size and contrast | `a4_identity.py` | `reports/e9_identity.txt` |
 | Fig. 1 (identity diagram), Fig. 2 (bird track with identity) | `a4_identity_fig_v7b.py`, `a4_attention_fig.py` (`bird(alp=True)`) | `fig/` |
 
+**4a, version v1.1 (on-target tolerance r = 2L instead of 25 px; journal «Інформатика та математичні методи в моделюванні»)**
+
+| Result | Script | Report |
+|---|---|---|
+| Table 2 with r = 2L (window vs full-frame threshold, birds and UAVs) | `a4_gate2s.py` | `reports/e18_gate2s.txt` |
+| Table 4 with r = 2L (UAV segments, false "bird" decisions per segment) | `a4_table4_2s.py` | `reports/e19_table4_2s.txt` |
+| Visibility of the target in the window (birds; `--uav` for UAVs) | `a4_visibility.py` | `reports/e20_visibility.txt` |
+| Bird size: dark mask vs whole bird | `a4_bird_extent.py` | `reports/e21_bird_extent.txt` |
+| Working range, L = 32…4 px (coverage, visibility, strict series) and its figure | `a4_range.py`, `a4_fig_range.py` (uses `a4_fig_sizes.py`) | `reports/e22_range.txt` |
+| Check on another dataset (Anti-UAV RGB) | `a4_antiuav.py` (uses `a4_clutter.py`) | `reports/e17_antiuav.txt`, `reports/e17_antiuav.csv` |
+| Fig. 1 scheme, Fig. 2 mechanism (window vs frame threshold) | `a4_scheme_v8d.py`, `a4_fig_mechanism.py` | `fig/v8d/` |
+
+**4b, version for Applied Aspects of Information Technology (tolerance r = 2L instead of 25 px)**
+
+| Result | Script | Report |
+|---|---|---|
+| Table 1 and bird decisions with on-target tolerance r = 2L (L = median target size) | `a4_identity_2s.py` | `reports/e23_identity_2s.txt` |
+| Table 3, last column: frames on target, reference start / start from a detection, r = 2L | `a4_e13_2s.py` | `reports/e24_e13_2s.txt` |
+| Fig. 1: algorithm of holding with abductive identity | `a4_flowchart_en.py` | `fig/en/fig_algo_en.png` |
+| Fig. 2: core of the identity theory (printed from `a4_track_alp.pl`) | `a4_prolog_listing_en.py` | `fig/en/fig_prolog_en.png` |
+| Fig. 3: identity hypotheses on a real frame | `a4_identity_real.py` (Ukrainian), `a4_identity_real_en.py` | `reports/identity_real_frame.txt` |
+| Fig. 4, Fig. 5: bird track with identity; dependence on the trust threshold | `a4_attention_fig_en.py`, `a4_sens_en.py` | `fig/en/` |
+
+The `*_en.py` figure scripts are generated from the Ukrainian ones by `make_en_figs.py` (labels translated,
+decimal point); data and drawing code are unchanged.
+
 UAV data: DUT Anti-UAV (Zhao et al., IEEE T-ITS 2022, Apache-2.0), not redistributed;
 place it in `dut/`. The scripts run from this folder; paths resolve automatically
 when `attention/` sits inside the repository (`common.py`).

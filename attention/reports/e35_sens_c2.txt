@@ -1,0 +1,12 @@
+E35: classifier -> ALP on the 2 L_t track (alp_c2, SC), trust threshold
+
+T=0.5  bird n 50 correct 5 unknown 44 wrong 1 d2b 0
+T=0.5  uav  n 72 correct 13 unknown 59 wrong 0 d2b 0
+T=0.4  bird n 50 correct 5 unknown 37 wrong 8 d2b 0
+T=0.4  uav  n 72 correct 21 unknown 49 wrong 2 d2b 2
+T=0.3  bird n 50 correct 12 unknown 23 wrong 15 d2b 0
+T=0.3  uav  n 72 correct 35 unknown 31 wrong 6 d2b 6
+T=0.25 bird n 50 correct 18 unknown 16 wrong 16 d2b 0
+T=0.25 uav  n 72 correct 38 unknown 28 wrong 6 d2b 6
+classifier alone bird: {'n': 50, 'correct': 2, 'unknown': 44, 'wrong': 4, 'd2b': 0}
+classifier alone uav: {'n': 72, 'correct': 19, 'unknown': 49, 'wrong': 4, 'd2b': 4}

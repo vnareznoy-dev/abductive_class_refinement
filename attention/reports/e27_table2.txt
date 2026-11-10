@@ -1,0 +1,15 @@
+E27: classifier labels along the SC track, window without / with abductive identity (correct / wrong / unknown, %)
+identity=False reproduces E7 column B: 122/122
+
+bird    window    n=50  correct  22.0 (11)  wrong  34.0 (17)  unknown  44.0 (22)
+bird    identity  n=50  correct  20.0 (10)  wrong  20.0 (10)  unknown  60.0 (30)
+
+uav  6 window    n=24  correct  33.3 ( 8)  wrong   4.2 ( 1)  unknown  62.5 (15)
+uav  6 identity  n=24  correct  37.5 ( 9)  wrong   4.2 ( 1)  unknown  58.3 (14)
+
+uav  9 window    n=24  correct  54.2 (13)  wrong   8.3 ( 2)  unknown  37.5 ( 9)
+uav  9 identity  n=24  correct  54.2 (13)  wrong   8.3 ( 2)  unknown  37.5 ( 9)
+
+uav 12 window    n=24  correct  62.5 (15)  wrong  12.5 ( 3)  unknown  25.0 ( 6)
+uav 12 identity  n=24  correct  66.7 (16)  wrong  12.5 ( 3)  unknown  20.8 ( 5)
+

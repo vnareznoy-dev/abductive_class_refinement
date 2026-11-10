@@ -18,7 +18,8 @@ from common import A4   # noqa: E402  (works in article4/code and in the reposit
 PL = os.path.join(HERE, "a4_track_alp.pl")
 if not os.path.exists(PL):
     PL = os.path.join(HERE, "..", "..", "abductive_class_refinement", "attention", "a4_track_alp.pl")
-OUT = os.path.join(A4, "fig", "en", "fig_prolog_en.png")
+# a4_track_alp.pl now has thr(body_mult, 2.0) (revision of 4b); the listing of the first version (c = 1) was fig_prolog_en.png
+OUT = os.path.join(A4, "fig", "en", "fig_prolog_c2_en.png")
 CN = "/System/Library/Fonts/Supplemental/Courier New.ttf"
 font_manager.fontManager.addfont(CN)
 

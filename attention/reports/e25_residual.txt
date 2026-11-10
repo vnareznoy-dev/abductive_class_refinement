@@ -1,0 +1,12 @@
+E25: residual |centre - prediction| on reference tracks (formula (1), beta 0.4), px
+
+birds, all       n=  5305  median  1.62  p90  7.45  p99  23.38  sigma 1.37  | residual/L_t median 0.18 p90 0.78 | > L_t   7.6 %  (L_t median 10.0)
+  size 0-5       n=   522  median  1.66  p90  9.16  p99  25.19  sigma 1.41  | residual/L_t median 0.28 p90 1.18 | > L_t  13.2 %  (L_t median  6.0)
+  size 5-8       n=  1400  median  1.30  p90  6.47  p99  22.32  sigma 1.11  | residual/L_t median 0.18 p90 0.77 | > L_t   7.5 %  (L_t median  7.0)
+  size 8-12      n=  1325  median  1.57  p90  6.37  p99  23.88  sigma 1.33  | residual/L_t median 0.16 p90 0.67 | > L_t   6.9 %  (L_t median 10.0)
+  size 12-999    n=  2058  median  2.00  p90  7.90  p99  20.94  sigma 1.70  | residual/L_t median 0.16 p90 0.76 | > L_t   6.6 %  (L_t median 13.0)
+UAV 6 px         n=  4217  median  0.19  p90  0.49  p99   1.68  sigma 0.16  | residual/L_t median 0.03 p90 0.08 | > L_t   0.0 %  (L_t median  6.0)
+UAV 9 px         n=  4217  median  0.28  p90  0.74  p99   2.53  sigma 0.24  | residual/L_t median 0.03 p90 0.08 | > L_t   0.0 %  (L_t median  9.0)
+UAV 12 px        n=  4217  median  0.37  p90  0.98  p99   3.37  sigma 0.32  | residual/L_t median 0.03 p90 0.08 | > L_t   0.0 %  (L_t median 12.0)
+
+sigma = median / 1.1774 (Rayleigh scale of a 2-D isotropic Gaussian residual).

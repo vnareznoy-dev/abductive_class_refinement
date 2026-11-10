@@ -1,0 +1,6 @@
+E33: Table 3, start from a detection, holder limited by 2 L_t (r = 2L unless stated)
+
+  bird : started 21/50; on target (2L) ref start all 38 %, started subset ref start 47 %, ref start same frames after detection 37 %, ref start first N frames 56 %, detection start 60 %; (25 px: ref 41 % / det 62 %); system answers after detection start (T = 0.5): correct 8, wrong 2, unknown 11
+  uav 6: started 6/24; on target (2L) ref start all 22 %, started subset ref start 16 %, ref start same frames after detection 16 %, ref start first N frames 15 %, detection start 23 %; (25 px: ref 47 % / det 30 %); system answers after detection start (T = 0.5): correct 2, wrong 0, unknown 4
+  uav 9: started 14/24; on target (2L) ref start all 47 %, started subset ref start 51 %, ref start same frames after detection 46 %, ref start first N frames 57 %, detection start 54 %; (25 px: ref 56 % / det 66 %); system answers after detection start (T = 0.5): correct 6, wrong 0, unknown 8
+  uav 12: started 15/24; on target (2L) ref start all 83 %, started subset ref start 84 %, ref start same frames after detection 76 %, ref start first N frames 89 %, detection start 78 %; (25 px: ref 85 % / det 81 %); system answers after detection start (T = 0.5): correct 8, wrong 0, unknown 7

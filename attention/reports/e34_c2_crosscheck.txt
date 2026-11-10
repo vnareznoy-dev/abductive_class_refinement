@@ -1,0 +1,2 @@
+E34: Python twin with A4_ALP_MULT=2 reproduces E26b alp_c2 series (S0, SC): 244/244
+Prolog theory agrees with the Python decisions on 1657/1657 sampled frames

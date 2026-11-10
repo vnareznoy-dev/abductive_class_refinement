@@ -1,0 +1,72 @@
+E28: Table 3 / Fig. 5 statistics (alone = classifier with tracking-by-detection, ALP = classifier + ALP)
+
+=== trust threshold 0.5
+  uav all  alone n=72  correct 19 (26.4 %, CI  9.8-47.8)  wrong  4 ( 5.6 %, CI  0.0-17.6)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  ALP   n=72  correct 13 (18.1 %, CI  5.8-36.7)  wrong  0 ( 0.0 %, CI  0.0- 0.0)  unknown 59  precision 100.0 %  coverage 18.1 %
+  uav all  McNemar wrong: alone-only 4, ALP-only 0, p = 0.125; correct: alone-only 13, ALP-only 7, p = 0.263; diff ALP-alone correct CI -30.8..+15.0 pp, wrong CI -17.6..+0.0 pp (12 clusters)
+  uav 6    alone n=24  correct  5 (20.8 %, CI  4.3-40.9)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    ALP   n=24  correct  2 ( 8.3 %, CI  0.0-22.2)  wrong  0 ( 0.0 %, CI  0.0- 0.0)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    McNemar wrong: alone-only 1, ALP-only 0, p = 1.000; correct: alone-only 4, ALP-only 1, p = 0.375; diff ALP-alone correct CI -33.3..+7.1 pp, wrong CI -15.8..+0.0 pp (12 clusters)
+  uav 9    alone n=24  correct  6 (25.0 %, CI  4.8-50.0)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    ALP   n=24  correct  5 (20.8 %, CI  7.1-40.0)  wrong  0 ( 0.0 %, CI  0.0- 0.0)  unknown 19  precision 100.0 %  coverage 20.8 %
+  uav 9    McNemar wrong: alone-only 1, ALP-only 0, p = 1.000; correct: alone-only 4, ALP-only 3, p = 1.000; diff ALP-alone correct CI -25.9..+21.7 pp, wrong CI -15.8..+0.0 pp (12 clusters)
+  uav 12   alone n=24  correct  8 (33.3 %, CI 13.6-55.6)  wrong  2 ( 8.3 %, CI  0.0-25.0)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   ALP   n=24  correct  6 (25.0 %, CI  7.4-52.4)  wrong  0 ( 0.0 %, CI  0.0- 0.0)  unknown 18  precision 100.0 %  coverage 25.0 %
+  uav 12   McNemar wrong: alone-only 2, ALP-only 0, p = 0.500; correct: alone-only 5, ALP-only 3, p = 0.727; diff ALP-alone correct CI -37.0..+21.7 pp, wrong CI -23.8..+0.0 pp (12 clusters)
+  bird all alone n=50  correct  2 ( 4.0 %, CI  0.0-10.0)  wrong  4 ( 8.0 %, CI  2.0-16.0)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all ALP   n=50  correct  4 ( 8.0 %, CI  2.0-16.0)  wrong  1 ( 2.0 %, CI  0.0- 6.0)  unknown 45  precision  80.0 %  coverage 10.0 %
+  bird all McNemar wrong: alone-only 4, ALP-only 1, p = 0.375; correct: alone-only 2, ALP-only 4, p = 0.688; diff ALP-alone correct CI -6.0..+14.0 pp, wrong CI -14.0..+2.0 pp (50 clusters)
+
+=== trust threshold 0.4
+  uav all  alone n=72  correct 19 (26.4 %, CI 10.0-47.6)  wrong  4 ( 5.6 %, CI  0.0-18.2)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  ALP   n=72  correct 21 (29.2 %, CI 13.6-49.2)  wrong  2 ( 2.8 %, CI  0.0-10.5)  unknown 49  precision  91.3 %  coverage 31.9 %
+  uav all  McNemar wrong: alone-only 2, ALP-only 0, p = 0.500; correct: alone-only 10, ALP-only 12, p = 0.832; diff ALP-alone correct CI -19.0..+27.0 pp, wrong CI -8.3..+0.0 pp (12 clusters)
+  uav 6    alone n=24  correct  5 (20.8 %, CI  4.3-40.9)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    ALP   n=24  correct  2 ( 8.3 %, CI  0.0-22.7)  wrong  0 ( 0.0 %, CI  0.0- 0.0)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    McNemar wrong: alone-only 1, ALP-only 0, p = 1.000; correct: alone-only 4, ALP-only 1, p = 0.375; diff ALP-alone correct CI -33.3..+6.9 pp, wrong CI -15.8..+0.0 pp (12 clusters)
+  uav 9    alone n=24  correct  6 (25.0 %, CI  5.0-48.5)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    ALP   n=24  correct  9 (37.5 %, CI 16.1-65.2)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 14  precision  90.0 %  coverage 41.7 %
+  uav 9    McNemar wrong: alone-only 0, ALP-only 0, p = 1.000; correct: alone-only 4, ALP-only 7, p = 0.549; diff ALP-alone correct CI -18.4..+52.4 pp, wrong CI +0.0..+0.0 pp (12 clusters)
+  uav 12   alone n=24  correct  8 (33.3 %, CI 13.6-57.1)  wrong  2 ( 8.3 %, CI  0.0-25.0)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   ALP   n=24  correct 10 (41.7 %, CI 20.6-66.7)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 13  precision  90.9 %  coverage 45.8 %
+  uav 12   McNemar wrong: alone-only 1, ALP-only 0, p = 1.000; correct: alone-only 2, ALP-only 4, p = 0.688; diff ALP-alone correct CI -10.7..+31.6 pp, wrong CI -15.8..+0.0 pp (12 clusters)
+  bird all alone n=50  correct  2 ( 4.0 %, CI  0.0-10.0)  wrong  4 ( 8.0 %, CI  2.0-16.0)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all ALP   n=50  correct  4 ( 8.0 %, CI  2.0-16.0)  wrong  5 (10.0 %, CI  2.0-20.0)  unknown 41  precision  44.4 %  coverage 18.0 %
+  bird all McNemar wrong: alone-only 2, ALP-only 3, p = 1.000; correct: alone-only 2, ALP-only 4, p = 0.688; diff ALP-alone correct CI -6.0..+14.0 pp, wrong CI -6.0..+10.0 pp (50 clusters)
+
+=== trust threshold 0.3
+  uav all  alone n=72  correct 19 (26.4 %, CI 10.0-47.6)  wrong  4 ( 5.6 %, CI  0.0-17.5)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  ALP   n=72  correct 36 (50.0 %, CI 31.2-71.4)  wrong  6 ( 8.3 %, CI  0.0-22.2)  unknown 30  precision  85.7 %  coverage 58.3 %
+  uav all  McNemar wrong: alone-only 1, ALP-only 3, p = 0.625; correct: alone-only 4, ALP-only 21, p = 0.001; diff ALP-alone correct CI +9.8..+42.1 pp, wrong CI -3.2..+11.1 pp (12 clusters)
+  uav 6    alone n=24  correct  5 (20.8 %, CI  4.2-40.9)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    ALP   n=24  correct  8 (33.3 %, CI 14.8-57.1)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 15  precision  88.9 %  coverage 37.5 %
+  uav 6    McNemar wrong: alone-only 1, ALP-only 1, p = 1.000; correct: alone-only 3, ALP-only 6, p = 0.508; diff ALP-alone correct CI +0.0..+30.4 pp, wrong CI -13.0..+12.5 pp (12 clusters)
+  uav 9    alone n=24  correct  6 (25.0 %, CI  5.0-50.0)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    ALP   n=24  correct 13 (54.2 %, CI 29.6-82.6)  wrong  2 ( 8.3 %, CI  0.0-23.8)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    McNemar wrong: alone-only 0, ALP-only 1, p = 1.000; correct: alone-only 1, ALP-only 8, p = 0.039; diff ALP-alone correct CI +3.7..+61.9 pp, wrong CI +0.0..+15.8 pp (12 clusters)
+  uav 12   alone n=24  correct  8 (33.3 %, CI 13.6-56.5)  wrong  2 ( 8.3 %, CI  0.0-23.8)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   ALP   n=24  correct 15 (62.5 %, CI 41.4-85.0)  wrong  3 (12.5 %, CI  0.0-30.0)  unknown  6  precision  83.3 %  coverage 75.0 %
+  uav 12   McNemar wrong: alone-only 0, ALP-only 1, p = 1.000; correct: alone-only 0, ALP-only 7, p = 0.016; diff ALP-alone correct CI +15.8..+45.0 pp, wrong CI +0.0..+13.6 pp (12 clusters)
+  bird all alone n=50  correct  2 ( 4.0 %, CI  0.0-10.0)  wrong  4 ( 8.0 %, CI  2.0-16.0)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all ALP   n=50  correct 12 (24.0 %, CI 12.0-36.0)  wrong 10 (20.0 %, CI 10.0-32.0)  unknown 28  precision  54.5 %  coverage 44.0 %
+  bird all McNemar wrong: alone-only 0, ALP-only 6, p = 0.031; correct: alone-only 2, ALP-only 12, p = 0.013; diff ALP-alone correct CI +6.0..+34.0 pp, wrong CI +4.0..+22.0 pp (50 clusters)
+
+=== trust threshold 0.25
+  uav all  alone n=72  correct 19 (26.4 %, CI 10.0-47.4)  wrong  4 ( 5.6 %, CI  0.0-18.2)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  ALP   n=72  correct 39 (54.2 %, CI 35.9-74.6)  wrong  6 ( 8.3 %, CI  0.0-22.2)  unknown 27  precision  86.7 %  coverage 62.5 %
+  uav all  McNemar wrong: alone-only 1, ALP-only 3, p = 0.625; correct: alone-only 2, ALP-only 22, p = 0.000; diff ALP-alone correct CI +13.9..+46.3 pp, wrong CI -3.3..+11.1 pp (12 clusters)
+  uav 6    alone n=24  correct  5 (20.8 %, CI  4.3-40.9)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    ALP   n=24  correct 10 (41.7 %, CI 17.9-71.4)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 13  precision  90.9 %  coverage 45.8 %
+  uav 6    McNemar wrong: alone-only 1, ALP-only 1, p = 1.000; correct: alone-only 1, ALP-only 6, p = 0.125; diff ALP-alone correct CI +6.7..+42.1 pp, wrong CI -13.0..+13.0 pp (12 clusters)
+  uav 9    alone n=24  correct  6 (25.0 %, CI  5.0-48.3)  wrong  1 ( 4.2 %, CI  0.0-15.8)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    ALP   n=24  correct 13 (54.2 %, CI 28.6-82.6)  wrong  2 ( 8.3 %, CI  0.0-25.0)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    McNemar wrong: alone-only 0, ALP-only 1, p = 1.000; correct: alone-only 1, ALP-only 8, p = 0.039; diff ALP-alone correct CI +3.8..+61.9 pp, wrong CI +0.0..+15.8 pp (12 clusters)
+  uav 12   alone n=24  correct  8 (33.3 %, CI 13.6-57.1)  wrong  2 ( 8.3 %, CI  0.0-25.0)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   ALP   n=24  correct 16 (66.7 %, CI 45.0-85.7)  wrong  3 (12.5 %, CI  0.0-31.3)  unknown  5  precision  84.2 %  coverage 79.2 %
+  uav 12   McNemar wrong: alone-only 0, ALP-only 1, p = 1.000; correct: alone-only 0, ALP-only 8, p = 0.008; diff ALP-alone correct CI +18.5..+47.4 pp, wrong CI +0.0..+14.3 pp (12 clusters)
+  bird all alone n=50  correct  2 ( 4.0 %, CI  0.0-10.0)  wrong  4 ( 8.0 %, CI  2.0-16.0)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all ALP   n=50  correct 19 (38.0 %, CI 24.0-52.0)  wrong 10 (20.0 %, CI 10.0-32.0)  unknown 21  precision  65.5 %  coverage 58.0 %
+  bird all McNemar wrong: alone-only 0, ALP-only 6, p = 0.031; correct: alone-only 0, ALP-only 17, p = 0.000; diff ALP-alone correct CI +22.0..+48.0 pp, wrong CI +4.0..+22.0 pp (50 clusters)
+
+Explanation examples (T = 0.5): full justification term returned by classify/2
+  unit ('bird', 38): facts f_det('drone', 0.5007072687149048), f_flap(True); run 63 frames -> class bird, justification revised(drone, refuted_by(flapping_flight), supported_by(wing_beat_oscillation))

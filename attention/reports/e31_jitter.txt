@@ -1,0 +1,13 @@
+E31: residual error of platform-motion compensation (random walk of the frame, s px/frame), strategy S0, r = 2L
+      off = share of held frames off target, %; series = continuous >= 48 frames on target, of 24
+
+  UAV  9 px, s = 0.0 px/frame | base   off  53.9 series  8 | alp    off  32.0 series 11 | alp_c2 off  32.7 series 11
+  UAV  9 px, s = 1.0 px/frame | base   off  61.7 series  7 | alp    off  46.5 series  8 | alp_c2 off  45.0 series  9
+  UAV  9 px, s = 2.0 px/frame | base   off  61.6 series  8 | alp    off  42.3 series  3 | alp_c2 off  42.7 series 10
+  UAV  9 px, s = 4.0 px/frame | base   off  58.1 series  9 | alp    off  27.7 series  0 | alp_c2 off  38.0 series  5
+
+  UAV 12 px, s = 0.0 px/frame | base   off  22.8 series 20 | alp    off  10.6 series 20 | alp_c2 off  10.8 series 20
+  UAV 12 px, s = 1.0 px/frame | base   off  40.5 series 13 | alp    off  27.6 series 13 | alp_c2 off  32.3 series 13
+  UAV 12 px, s = 2.0 px/frame | base   off  37.0 series 15 | alp    off  10.1 series  7 | alp_c2 off  17.2 series 13
+  UAV 12 px, s = 4.0 px/frame | base   off  41.0 series  8 | alp    off   8.7 series  1 | alp_c2 off  14.4 series  4
+

@@ -1,0 +1,31 @@
+E27b (revision of 4b, reviewer 1, remark 4). 95 % cluster-bootstrap intervals for Table 2.
+  correct / wrong labels, % (95 % CI); d = difference, pp
+
+bird   n=50  clusters=50
+   TBD              correct   4.0 (  0.0.. 10.0)  wrong   8.0 (  2.0.. 16.0)
+   window           correct  22.0 ( 12.0.. 34.0)  wrong  34.0 ( 22.0.. 48.0)
+   window+identity  correct  20.0 ( 10.0.. 32.0)  wrong  20.0 ( 10.0.. 32.0)
+   d window - TBD       correct +18.0 (  6.0.. 32.0)  wrong +26.0 ( 14.0.. 38.0)
+   d identity - window  correct  -2.0 (-12.0..  8.0)  wrong -14.0 (-26.0.. -2.0)
+
+uav 6  n=24  clusters=12
+   TBD              correct  20.8 (  4.2.. 40.9)  wrong   4.2 (  0.0.. 15.8)
+   window           correct  33.3 ( 10.0.. 59.1)  wrong   4.2 (  0.0.. 15.8)
+   window+identity  correct  37.5 ( 13.9.. 65.0)  wrong   4.2 (  0.0.. 15.8)
+   d window - TBD       correct +12.5 (  0.0.. 26.3)  wrong  +0.0 (-13.6.. 12.0)
+   d identity - window  correct  +4.2 (  0.0.. 15.8)  wrong  +0.0 (  0.0..  0.0)
+
+uav 9  n=24  clusters=12
+   TBD              correct  25.0 (  5.3.. 50.0)  wrong   4.2 (  0.0.. 15.8)
+   window           correct  54.2 ( 31.0.. 81.8)  wrong   8.3 (  0.0.. 25.0)
+   window+identity  correct  54.2 ( 31.0.. 81.8)  wrong   8.3 (  0.0.. 25.0)
+   d window - TBD       correct +29.2 (  3.1.. 61.9)  wrong  +4.2 (  0.0.. 15.8)
+   d identity - window  correct  +0.0 (  0.0..  0.0)  wrong  +0.0 (  0.0..  0.0)
+
+uav 12  n=24  clusters=12
+   TBD              correct  33.3 ( 13.6.. 56.5)  wrong   8.3 (  0.0.. 23.5)
+   window           correct  62.5 ( 38.1.. 83.3)  wrong  12.5 (  0.0.. 29.4)
+   window+identity  correct  66.7 ( 45.0.. 85.7)  wrong  12.5 (  0.0.. 29.4)
+   d window - TBD       correct +29.2 ( 14.3.. 44.0)  wrong  +4.2 (  0.0.. 13.8)
+   d identity - window  correct  +4.2 (  0.0.. 13.8)  wrong  +0.0 (  0.0..  0.0)
+

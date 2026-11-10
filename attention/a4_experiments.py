@@ -31,6 +31,10 @@ THRS = (0.5, 0.25, 0.1)
 FLASH = 0.25
 ID_HIST, ID_MIN, ID_SIZE, ID_PEAK = 15, 5, (0.5, 2.0), (0.4, 2.5)   # E9 identity check (fixed a priori)
 ALP_FLOOR = 3.0   # E10: body-length floor of the kinematic constraint, px (a4_track_alp.pl)
+# Coefficient c of the constraint |c_b - x^_t| <= c L_t. The published runs E10-E24 used c = 1; after the review
+# of 4b the main variant is c = 2 (a4_track_alp.pl, thr(body_mult, 2.0)). Set A4_ALP_MULT=2 to run it here;
+# the default 1 keeps every cached run reproducible.
+ALP_MULT = float(os.environ.get("A4_ALP_MULT", "1"))
 SEEDS = (7, 11, 23, 42, 77)
 SIZE_BINS = ((4, 6), (7, 9), (10, 12))
 
@@ -106,7 +110,7 @@ class Holder:
         """Python twin of explain/2 in a4_track_alp.pl: nearest candidate whose residual does not
         exceed one body length (median size of the last accepted silhouettes, floor 3 px); with
         fewer than ID_MIN accepted silhouettes the 30 px window gate applies; None = 'unseen'."""
-        lim = max(float(np.median(self.sizes)), ALP_FLOOR) if len(self.sizes) >= ID_MIN else 30.0
+        lim = ALP_MULT * max(float(np.median(self.sizes)), ALP_FLOOR) if len(self.sizes) >= ID_MIN else 30.0
         ok = [b for b in bl if np.hypot(b[0] - pred[0], b[1] - pred[1]) <= lim]
         pick = min(ok, key=lambda b: np.hypot(b[0] - pred[0], b[1] - pred[1])) if ok else None
         self.alp_log.append((tuple(pred), [(b[0], b[1], max(b[2], b[3])) for b in bl],

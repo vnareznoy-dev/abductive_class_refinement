@@ -1,0 +1,123 @@
+E32: main variant 2 L_t (alp_c2) -- Table 3 / Fig. 5 and Table 2
+
+=== Table 3 / Fig. 5, trust threshold 0.5
+  uav all  alone  n=72  correct 19 (26.4 %)  wrong  4 ( 5.6 %)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  alp    n=72  correct 13 (18.1 %)  wrong  0 ( 0.0 %)  unknown 59  precision 100.0 %  coverage 18.1 %
+  uav all  alp_c2 n=72  correct 13 (18.1 %)  wrong  0 ( 0.0 %)  unknown 59  precision 100.0 %  coverage 18.1 %
+  uav all  2L_t vs alone: McNemar wrong 4/0 p = 0.125; correct 13/7 p = 0.263; diff correct -30.6..+14.5 pp, wrong -18.2..+0.0 pp
+  uav 6    alone  n=24  correct  5 (20.8 %)  wrong  1 ( 4.2 %)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    alp    n=24  correct  2 ( 8.3 %)  wrong  0 ( 0.0 %)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    alp_c2 n=24  correct  2 ( 8.3 %)  wrong  0 ( 0.0 %)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    2L_t vs alone: McNemar wrong 1/0 p = 1.000; correct 4/1 p = 0.375; diff correct -32.3..+8.7 pp, wrong -15.8..+0.0 pp
+  uav 9    alone  n=24  correct  6 (25.0 %)  wrong  1 ( 4.2 %)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    alp    n=24  correct  5 (20.8 %)  wrong  0 ( 0.0 %)  unknown 19  precision 100.0 %  coverage 20.8 %
+  uav 9    alp_c2 n=24  correct  5 (20.8 %)  wrong  0 ( 0.0 %)  unknown 19  precision 100.0 %  coverage 20.8 %
+  uav 9    2L_t vs alone: McNemar wrong 1/0 p = 1.000; correct 4/3 p = 1.000; diff correct -26.1..+22.2 pp, wrong -15.8..+0.0 pp
+  uav 12   alone  n=24  correct  8 (33.3 %)  wrong  2 ( 8.3 %)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   alp    n=24  correct  6 (25.0 %)  wrong  0 ( 0.0 %)  unknown 18  precision 100.0 %  coverage 25.0 %
+  uav 12   alp_c2 n=24  correct  6 (25.0 %)  wrong  0 ( 0.0 %)  unknown 18  precision 100.0 %  coverage 25.0 %
+  uav 12   2L_t vs alone: McNemar wrong 2/0 p = 0.500; correct 5/3 p = 0.727; diff correct -37.5..+21.8 pp, wrong -25.0..+0.0 pp
+  bird all alone  n=50  correct  2 ( 4.0 %)  wrong  4 ( 8.0 %)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all alp    n=50  correct  4 ( 8.0 %)  wrong  1 ( 2.0 %)  unknown 45  precision  80.0 %  coverage 10.0 %
+  bird all alp_c2 n=50  correct  5 (10.0 %)  wrong  1 ( 2.0 %)  unknown 44  precision  83.3 %  coverage 12.0 %
+  bird all 2L_t vs alone: McNemar wrong 4/1 p = 0.375; correct 2/5 p = 0.453; diff correct -4.0..+16.0 pp, wrong -16.0..+2.0 pp
+
+=== Table 3 / Fig. 5, trust threshold 0.4
+  uav all  alone  n=72  correct 19 (26.4 %)  wrong  4 ( 5.6 %)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  alp    n=72  correct 21 (29.2 %)  wrong  2 ( 2.8 %)  unknown 49  precision  91.3 %  coverage 31.9 %
+  uav all  alp_c2 n=72  correct 21 (29.2 %)  wrong  2 ( 2.8 %)  unknown 49  precision  91.3 %  coverage 31.9 %
+  uav all  2L_t vs alone: McNemar wrong 2/0 p = 0.500; correct 10/12 p = 0.832; diff correct -18.4..+27.5 pp, wrong -8.3..+0.0 pp
+  uav 6    alone  n=24  correct  5 (20.8 %)  wrong  1 ( 4.2 %)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    alp    n=24  correct  2 ( 8.3 %)  wrong  0 ( 0.0 %)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    alp_c2 n=24  correct  2 ( 8.3 %)  wrong  0 ( 0.0 %)  unknown 22  precision 100.0 %  coverage  8.3 %
+  uav 6    2L_t vs alone: McNemar wrong 1/0 p = 1.000; correct 4/1 p = 0.375; diff correct -32.1..+7.7 pp, wrong -15.4..+0.0 pp
+  uav 9    alone  n=24  correct  6 (25.0 %)  wrong  1 ( 4.2 %)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    alp    n=24  correct  9 (37.5 %)  wrong  1 ( 4.2 %)  unknown 14  precision  90.0 %  coverage 41.7 %
+  uav 9    alp_c2 n=24  correct  9 (37.5 %)  wrong  1 ( 4.2 %)  unknown 14  precision  90.0 %  coverage 41.7 %
+  uav 9    2L_t vs alone: McNemar wrong 0/0 p = 1.000; correct 4/7 p = 0.549; diff correct -18.2..+50.0 pp, wrong +0.0..+0.0 pp
+  uav 12   alone  n=24  correct  8 (33.3 %)  wrong  2 ( 8.3 %)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   alp    n=24  correct 10 (41.7 %)  wrong  1 ( 4.2 %)  unknown 13  precision  90.9 %  coverage 45.8 %
+  uav 12   alp_c2 n=24  correct 10 (41.7 %)  wrong  1 ( 4.2 %)  unknown 13  precision  90.9 %  coverage 45.8 %
+  uav 12   2L_t vs alone: McNemar wrong 1/0 p = 1.000; correct 2/4 p = 0.688; diff correct -11.1..+31.6 pp, wrong -15.8..+0.0 pp
+  bird all alone  n=50  correct  2 ( 4.0 %)  wrong  4 ( 8.0 %)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all alp    n=50  correct  4 ( 8.0 %)  wrong  5 (10.0 %)  unknown 41  precision  44.4 %  coverage 18.0 %
+  bird all alp_c2 n=50  correct  5 (10.0 %)  wrong  8 (16.0 %)  unknown 37  precision  38.5 %  coverage 26.0 %
+  bird all 2L_t vs alone: McNemar wrong 2/6 p = 0.289; correct 2/5 p = 0.453; diff correct -4.0..+16.0 pp, wrong -2.0..+20.0 pp
+
+=== Table 3 / Fig. 5, trust threshold 0.3
+  uav all  alone  n=72  correct 19 (26.4 %)  wrong  4 ( 5.6 %)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  alp    n=72  correct 36 (50.0 %)  wrong  6 ( 8.3 %)  unknown 30  precision  85.7 %  coverage 58.3 %
+  uav all  alp_c2 n=72  correct 35 (48.6 %)  wrong  6 ( 8.3 %)  unknown 31  precision  85.4 %  coverage 56.9 %
+  uav all  2L_t vs alone: McNemar wrong 1/3 p = 0.625; correct 4/20 p = 0.002; diff correct +9.3..+39.6 pp, wrong -3.0..+10.6 pp
+  uav 6    alone  n=24  correct  5 (20.8 %)  wrong  1 ( 4.2 %)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    alp    n=24  correct  8 (33.3 %)  wrong  1 ( 4.2 %)  unknown 15  precision  88.9 %  coverage 37.5 %
+  uav 6    alp_c2 n=24  correct  7 (29.2 %)  wrong  1 ( 4.2 %)  unknown 16  precision  87.5 %  coverage 33.3 %
+  uav 6    2L_t vs alone: McNemar wrong 1/1 p = 1.000; correct 3/5 p = 0.727; diff correct +0.0..+22.7 pp, wrong -12.5..+13.6 pp
+  uav 9    alone  n=24  correct  6 (25.0 %)  wrong  1 ( 4.2 %)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    alp    n=24  correct 13 (54.2 %)  wrong  2 ( 8.3 %)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    alp_c2 n=24  correct 13 (54.2 %)  wrong  2 ( 8.3 %)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    2L_t vs alone: McNemar wrong 0/1 p = 1.000; correct 1/8 p = 0.039; diff correct +3.6..+61.9 pp, wrong +0.0..+15.0 pp
+  uav 12   alone  n=24  correct  8 (33.3 %)  wrong  2 ( 8.3 %)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   alp    n=24  correct 15 (62.5 %)  wrong  3 (12.5 %)  unknown  6  precision  83.3 %  coverage 75.0 %
+  uav 12   alp_c2 n=24  correct 15 (62.5 %)  wrong  3 (12.5 %)  unknown  6  precision  83.3 %  coverage 75.0 %
+  uav 12   2L_t vs alone: McNemar wrong 0/1 p = 1.000; correct 0/7 p = 0.016; diff correct +15.4..+44.4 pp, wrong +0.0..+14.3 pp
+  bird all alone  n=50  correct  2 ( 4.0 %)  wrong  4 ( 8.0 %)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all alp    n=50  correct 12 (24.0 %)  wrong 10 (20.0 %)  unknown 28  precision  54.5 %  coverage 44.0 %
+  bird all alp_c2 n=50  correct 12 (24.0 %)  wrong 15 (30.0 %)  unknown 23  precision  44.4 %  coverage 54.0 %
+  bird all 2L_t vs alone: McNemar wrong 0/11 p = 0.001; correct 2/12 p = 0.013; diff correct +6.0..+34.0 pp, wrong +12.0..+34.0 pp
+
+=== Table 3 / Fig. 5, trust threshold 0.25
+  uav all  alone  n=72  correct 19 (26.4 %)  wrong  4 ( 5.6 %)  unknown 49  precision  82.6 %  coverage 31.9 %
+  uav all  alp    n=72  correct 39 (54.2 %)  wrong  6 ( 8.3 %)  unknown 27  precision  86.7 %  coverage 62.5 %
+  uav all  alp_c2 n=72  correct 38 (52.8 %)  wrong  6 ( 8.3 %)  unknown 28  precision  86.4 %  coverage 61.1 %
+  uav all  2L_t vs alone: McNemar wrong 1/3 p = 0.625; correct 2/21 p = 0.000; diff correct +13.6..+42.4 pp, wrong -2.9..+11.1 pp
+  uav 6    alone  n=24  correct  5 (20.8 %)  wrong  1 ( 4.2 %)  unknown 18  precision  83.3 %  coverage 25.0 %
+  uav 6    alp    n=24  correct 10 (41.7 %)  wrong  1 ( 4.2 %)  unknown 13  precision  90.9 %  coverage 45.8 %
+  uav 6    alp_c2 n=24  correct  9 (37.5 %)  wrong  1 ( 4.2 %)  unknown 14  precision  90.0 %  coverage 41.7 %
+  uav 6    2L_t vs alone: McNemar wrong 1/1 p = 1.000; correct 1/5 p = 0.219; diff correct +3.8..+33.3 pp, wrong -13.0..+13.6 pp
+  uav 9    alone  n=24  correct  6 (25.0 %)  wrong  1 ( 4.2 %)  unknown 17  precision  85.7 %  coverage 29.2 %
+  uav 9    alp    n=24  correct 13 (54.2 %)  wrong  2 ( 8.3 %)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    alp_c2 n=24  correct 13 (54.2 %)  wrong  2 ( 8.3 %)  unknown  9  precision  86.7 %  coverage 62.5 %
+  uav 9    2L_t vs alone: McNemar wrong 0/1 p = 1.000; correct 1/8 p = 0.039; diff correct +0.0..+61.9 pp, wrong +0.0..+16.7 pp
+  uav 12   alone  n=24  correct  8 (33.3 %)  wrong  2 ( 8.3 %)  unknown 14  precision  80.0 %  coverage 41.7 %
+  uav 12   alp    n=24  correct 16 (66.7 %)  wrong  3 (12.5 %)  unknown  5  precision  84.2 %  coverage 79.2 %
+  uav 12   alp_c2 n=24  correct 16 (66.7 %)  wrong  3 (12.5 %)  unknown  5  precision  84.2 %  coverage 79.2 %
+  uav 12   2L_t vs alone: McNemar wrong 0/1 p = 1.000; correct 0/8 p = 0.008; diff correct +18.2..+46.2 pp, wrong +0.0..+13.6 pp
+  bird all alone  n=50  correct  2 ( 4.0 %)  wrong  4 ( 8.0 %)  unknown 44  precision  33.3 %  coverage 12.0 %
+  bird all alp    n=50  correct 19 (38.0 %)  wrong 10 (20.0 %)  unknown 21  precision  65.5 %  coverage 58.0 %
+  bird all alp_c2 n=50  correct 18 (36.0 %)  wrong 16 (32.0 %)  unknown 16  precision  52.9 %  coverage 68.0 %
+  bird all 2L_t vs alone: McNemar wrong 0/12 p = 0.000; correct 0/16 p = 0.000; diff correct +20.0..+46.0 pp, wrong +12.0..+36.0 pp
+
+=== Table 2: labels along the SC track, correct / wrong % (95 % CI)
+bird   n=50
+   TBD          correct   4.0 (  0.0.. 10.0)  wrong   8.0 (  2.0.. 16.0)
+   window       correct  22.0 ( 10.0.. 34.0)  wrong  34.0 ( 22.0.. 48.0)
+   window+L_t   correct  20.0 ( 10.0.. 32.0)  wrong  20.0 ( 10.0.. 32.0)
+   window+2L_t  correct  18.0 (  8.0.. 28.0)  wrong  30.0 ( 18.0.. 44.0)
+   d window - TBD: correct +18.0 (+6.0..+30.0, McNemar p 0.012)  wrong +26.0 (+14.0..+38.0, McNemar p 0.000)
+   d window+2L_t - window: correct  -4.0 (-10.0..+0.0, McNemar p 0.500)  wrong  -4.0 (-12.0..+4.0, McNemar p 0.625)
+
+uav 6  n=24
+   TBD          correct  20.8 (  4.0.. 40.9)  wrong   4.2 (  0.0.. 15.8)
+   window       correct  33.3 ( 10.3.. 59.1)  wrong   4.2 (  0.0.. 15.8)
+   window+L_t   correct  37.5 ( 13.6.. 65.0)  wrong   4.2 (  0.0.. 15.8)
+   window+2L_t  correct  33.3 ( 10.3.. 59.1)  wrong   4.2 (  0.0.. 15.8)
+   d window - TBD: correct +12.5 (+0.0..+26.1, McNemar p 0.375)  wrong  +0.0 (-13.1..+13.0, McNemar p 1.000)
+   d window+2L_t - window: correct  +0.0 (+0.0..+0.0, McNemar p 1.000)  wrong  +0.0 (+0.0..+0.0, McNemar p 1.000)
+
+uav 9  n=24
+   TBD          correct  25.0 (  4.8.. 48.3)  wrong   4.2 (  0.0.. 15.8)
+   window       correct  54.2 ( 30.0.. 81.8)  wrong   8.3 (  0.0.. 25.0)
+   window+L_t   correct  54.2 ( 30.0.. 81.8)  wrong   8.3 (  0.0.. 25.0)
+   window+2L_t  correct  54.2 ( 30.0.. 81.8)  wrong   8.3 (  0.0.. 25.0)
+   d window - TBD: correct +29.2 (+3.7..+63.2, McNemar p 0.039)  wrong  +4.2 (+0.0..+15.8, McNemar p 1.000)
+   d window+2L_t - window: correct  +0.0 (+0.0..+0.0, McNemar p 1.000)  wrong  +0.0 (+0.0..+0.0, McNemar p 1.000)
+
+uav 12  n=24
+   TBD          correct  33.3 ( 13.6.. 54.6)  wrong   8.3 (  0.0.. 23.5)
+   window       correct  62.5 ( 38.1.. 82.6)  wrong  12.5 (  0.0.. 29.4)
+   window+L_t   correct  66.7 ( 45.5.. 84.4)  wrong  12.5 (  0.0.. 29.4)
+   window+2L_t  correct  66.7 ( 45.5.. 84.4)  wrong  12.5 (  0.0.. 29.4)
+   d window - TBD: correct +29.2 (+13.0..+42.1, McNemar p 0.016)  wrong  +4.2 (+0.0..+13.8, McNemar p 1.000)
+   d window+2L_t - window: correct  +4.2 (+0.0..+13.8, McNemar p 1.000)  wrong  +0.0 (+0.0..+0.0, McNemar p 1.000)
+

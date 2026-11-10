@@ -31,7 +31,7 @@ import a4_rules as RR                                                          #
 import a4_style as ST                                                          # noqa: E402
 TNR = ST.TNR
 ST.apply()
-ST_NAME = {"hold": "holding", "coast": "extrapolation", "reacq": "re-acquisition", "lost": "lost"}
+ST_NAME = {"hold": "track maint.", "coast": "extrapolation", "reacq": "re-acquisition", "lost": "lost"}
 
 
 def run_holder(holder, frame_iter):
@@ -151,7 +151,7 @@ def draw(log, fps, out, tiles_idx, crop, inset, decision_word):
             for sp in ia.spines.values():
                 sp.set_edgecolor("white"); sp.set_linewidth(1.0)
         ax.set_xlim(x0, x0 + crop); ax.set_ylim(y0 + crop, y0); ax.set_xticks([]); ax.set_yticks([]); ax.grid(False)
-        ax.set_xlabel(f"frame {i}\n{ST_NAME[e['state']]}\n$c_t$ = {e['conf']:.2f}", fontsize=14, labelpad=3, linespacing=1.0)
+        ax.set_xlabel(f"frame {i}\n{ST_NAME[e['state']]}\n$q_t$ = {e['conf']:.2f}", fontsize=14, labelpad=3, linespacing=1.0)
         if t == 0:
             ax.set_title("a", loc="left", fontsize=14)
     t = np.arange(len(log))
@@ -162,14 +162,14 @@ def draw(log, fps, out, tiles_idx, crop, inset, decision_word):
     ax1.axvspan(s0, s1, color=RUN, lw=0, zorder=0)
     ax1.plot(t, [e["conf"] for e in log], color=ST.BLUE)
     ax1.axhline(0.25, color=ST.GREY, lw=1.0, ls="-.")
-    ax1.set_ylim(0, 1); ax1.set_ylabel("$c_t$", labelpad=8); ax1.set_xlim(0, len(log))
+    ax1.set_ylim(0, 1); ax1.set_ylabel("$q_t$", labelpad=8); ax1.set_xlim(0, len(log))
     ax1.tick_params(labelbottom=False)
     ax1.set_title("b", loc="left", fontsize=14, pad=4)
     axl = fig.add_subplot(outer[1]); axl.axis("off")
     axl.legend([Line2D([], [], color=ST.BLUE), Line2D([], [], color=ST.GREY, ls="-.", lw=1.0),
                 Patch(fc=RUN, ec="none"), Patch(fc=ST.GREEN, ec="none"), Patch(fc=ST.YELLOW, ec="none"),
                 Line2D([], [], color=ST.ORANGE, marker="v", ls="none", ms=8)],
-               ["$c_t$", "threshold 0.25", "longest run", "holding", "extrapolation", "re-acquisition"],
+               ["$q_t$", "threshold 0.25", "longest run", "track maintenance", "extrapolation", "re-acquisition"],
                loc="center", bbox_to_anchor=(0.5, 0.35), ncol=3, borderaxespad=0)
     ax1s = fig.add_subplot(gb_[1], sharex=ax1)
     shades = {"hold": ST.GREEN, "reacq": ST.GREEN, "coast": ST.YELLOW, "lost": "white"}

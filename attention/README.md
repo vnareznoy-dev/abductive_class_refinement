@@ -91,6 +91,36 @@ reports in `attention/reports/` (re-run logs `*.log` are included).
 The `*_en.py` figure scripts are generated from the Ukrainian ones by `make_en_figs.py` (labels translated,
 decimal point); data and drawing code are unchanged.
 
+**4b, version v1.2 (revision after the reviews of Applied Aspects of Information Technology)**
+
+Main change: the integrity constraint of abductive identity is |c_b − x̂_t| ≤ 2·L_t (two body lengths) instead of
+one body length. In `a4_track_alp.pl` this is `thr(body_mult, 2.0)`; in the Python twin `a4_experiments.Holder`
+the coefficient is set by the environment variable `A4_ALP_MULT` (default 1 keeps the runs E10–E24 of the
+first version reproducible; the scripts of the main variant set `A4_ALP_MULT=2` themselves).
+The coefficient follows the measured residual of the true target to the prediction (E25, Fig. 2 of the revised
+article). The caches in `cache/` are not published; each script rebuilds what it needs from the videos.
+
+| Result (numbering of the revised article) | Script | Report |
+|---|---|---|
+| Fig. 2: residual "silhouette centre − prediction" in body lengths, limits 1 L_t and 2 L_t | `a4_rev_residual.py` (E25), `a4_fig_residual.py` | `reports/e25_residual.txt`, `reports/fig_residual.txt` |
+| Tables 1 and 2: one pass with all association variants (limits 1 and 2 L_t, floors, fixed and statistical gates; `E26_C2SENS=1`: β and K for 2 L_t) | `a4_rev_runs.py` (E26), `a4_rev_tables.py` | `reports/e26_tables.txt`, `reports/e26_run.log`, `reports/e26b_run.log` |
+| Tables 3 and 4 (labels along the track; conclusions vs the trust threshold) for the main variant 2 L_t, exact McNemar tests, cluster-bootstrap intervals; the report keeps the numbering of the first version (its Table 2 / Table 3 are Tables 3 / 4 here) | `a4_rev_c2.py` (E32) | `reports/e32_c2.txt` |
+| Labels along the track with the column "window with identity" (limit 1 L_t) and its 95 % intervals | `a4_rev_table2.py` (E27), `a4_rev_table2_ci.py` (E27b) | `reports/e27_table2.txt`, `reports/e27_table2_ci.txt` |
+| Statistics of the label decisions vs the trust threshold (first version) | `a4_rev_stats.py` (E28) | `reports/e28_stats.txt` |
+| Processing time of the identity step | `a4_rev_timing.py` (E29) | `reports/e29_timing.txt` |
+| Start from a detection vs reference start on the same units (first version; main variant in E33) | `a4_rev_detstart.py` (E30) | `reports/e30_detstart_subset.txt` |
+| Tolerance of constraint (2) to the residual error of platform-motion compensation | `a4_rev_jitter.py` (E31) | `reports/e31_jitter.txt` |
+| Table 5: start from a classifier detection, main variant 2 L_t | `a4_e13_c2.py` (E33) | `reports/e33_e13_c2.txt` |
+| Cross-check of the Python twin with c = 2 against E26 and against the Prolog theory | `a4_c2_crosscheck.py` (E34) | `reports/e34_c2_crosscheck.txt` |
+| Fig. 3: core of the identity theory with `body_mult` (printed from `a4_track_alp.pl`) | `a4_prolog_listing_en.py` | `fig/en/fig_prolog_c2_en.png` |
+| Fig. 4: identity hypotheses on a real frame with the limit 2 L_t (track 37, frame 2043) | `a4_identity_real_c2.py` | `reports/identity_real_c2.txt`, `fig/en/fig1_identity_real_c2_en.png` |
+| Fig. 5: bird track with identity, 2 L_t | `a4_fig4_c2.py` (reuses `a4_attention_fig.py`, `a4_attention_fig_en.py`) | `fig/en/fig_attn_bird_alp_c2_en.png` |
+| Fig. 6: failure example, a neighbouring bird crossing the target (track 31) | `a4_fig_failure_c2.py` | `reports/fig_failure_c2.txt`, `fig/en/fig_failure_c2_en.png` |
+| Fig. 7: dependence of the conclusion on the trust threshold, 2 L_t | `a4_fig_sens_c2.py` (E35) | `reports/e35_sens_c2.txt`, `fig/en/fig_sens_c2_en.png` |
+
+Also added: earlier figure scripts of the Ukrainian drafts (`a4_scheme_v7b.py`, `a4_flowchart_v7b.py`,
+`a4_fig2_2s.py`, `a4_fig_antiuav.py`, `a4_fig_attn_antiuav.py`).
+
 UAV data: DUT Anti-UAV (Zhao et al., IEEE T-ITS 2022, Apache-2.0), not redistributed;
 place it in `dut/`. The scripts run from this folder; paths resolve automatically
 when `attention/` sits inside the repository (`common.py`).

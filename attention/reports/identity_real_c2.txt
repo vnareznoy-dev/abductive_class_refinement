@@ -1,0 +1,10 @@
+Fig. 3 (2 L_t): 30 frames with a refuted candidate and the target accepted; top 8 by score:
+  track 63 video frame 804 L_t 7.0 score (True, True, 6.0, 7.0)
+  track 11 video frame 2017 L_t 5.0 score (True, True, 6.0, 5.0)
+  track 11 video frame 2025 L_t 5.0 score (True, True, 6.0, 5.0)
+  track 63 video frame 803 L_t 7.5 score (True, True, np.float64(4.280849573739793), 7.5)
+  track 63 video frame 805 L_t 7.5 score (True, True, np.float64(4.123701980656378), 7.5)
+  track 22 video frame 996 L_t 9.0 score (True, True, np.float64(3.4918419319705727), 9.0)
+  track 11 video frame 2021 L_t 5.0 score (True, True, np.float64(3.1841088802040414), 5.0)
+  track 11 video frame 2024 L_t 5.0 score (True, True, np.float64(2.5146615858466603), 5.0)
+drawn: track 37 video frame 2043; L_t 11.00, 2L_t 22.00; b1 1.76; admissible []; refuted b2 28.00

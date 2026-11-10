@@ -9,13 +9,15 @@
 % Hypotheses for frame t (exactly one is abduced):
 %   same(B)  -- candidate silhouette B is the held target;
 %   unseen   -- the target is not visible in this frame (it coasts on the prediction).
-% Integrity constraint (hard, authored flight physics, not fitted):
-%   a target cannot leave its predicted position by more than one body length
+% Integrity constraint (hard):
+%   a target cannot leave its predicted position by more than TWO body lengths
 %   in one frame. Body length = median size of the last accepted silhouettes,
-%   floor 3 px (pixel quantisation). A real lateral acceleration of 3 g moves a
-%   bird or a multirotor by ~0.03 m in 1/30 s, i.e. a few hundredths of a body
-%   length; the one-body-length margin covers the jitter of the silhouette
-%   centre during wing beats.
+%   floor 3 px (pixel quantisation). The coefficient 2 follows the measured
+%   residual of the true target to the prediction (article 4b, revision): one
+%   body length is exceeded in 7.6 % of the frames of the bird reference tracks
+%   (break-up of the thresholded silhouette into body and wings), two body
+%   lengths in 2.1 %; for UAVs in at most 0.5 %. The first version used one body
+%   length (thr(body_mult, 1.0)).
 % Preference (minimality): among the unrefuted same(B), the one closest to the
 % prediction; unseen is abduced only when every same(B) is refuted, so a jump
 % to a neighbour is never chosen over "not visible".
@@ -28,13 +30,14 @@
 :- dynamic f_body/1.        % f_body(L)               body length in px (asserted only when grounded)
 
 thr(body_floor, 3.0).
+thr(body_mult, 2.0).
 thr(window_gate, 30.0).
 
 residual(Id, R) :-
     f_cand(Id, X, Y, _), f_pred(PX, PY),
     R is sqrt((X - PX) ** 2 + (Y - PY) ** 2).
 
-limit(L) :- f_body(B), !, thr(body_floor, F), L is max(B, F).
+limit(L) :- f_body(B), !, thr(body_floor, F), thr(body_mult, M), L is M * max(B, F).
 limit(G) :- thr(window_gate, G).            % constraint not groundable yet
 
 refutes(same(Id), jump(R, L)) :-

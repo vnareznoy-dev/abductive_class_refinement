@@ -1,0 +1,9 @@
+E30: reviewer 1 remark 6 - start from detection vs reference start on the SAME units / frames (r = 2L)
+  bird : all units ref start 25 % (n=50); started subset ref start 27 %, ref start on the same frames after detection 20 %, detection start 49 % (n=21); median size all 9.0 / started 9.0
+  uav 6: all units ref start 20 % (n=24); started subset ref start 7 %, ref start on the same frames after detection 6 %, detection start 23 % (n=6); median size all 6 / started 6
+  uav 9: all units ref start 47 % (n=24); started subset ref start 50 %, ref start on the same frames after detection 45 %, detection start 53 % (n=14); median size all 9 / started 9
+  uav 12: all units ref start 83 % (n=24); started subset ref start 84 %, ref start on the same frames after detection 76 %, detection start 76 % (n=15); median size all 12 / started 12
+  age check: reference-start holder over its FIRST N frames, N = length of the detection-start run of the same unit
+    bird : reference start, first N frames 37 % vs detection start 49 % (n=21)
+    uav 9: reference start, first N frames 57 % vs detection start 53 % (n=14)
+    uav 12: reference start, first N frames 89 % vs detection start 76 % (n=15)

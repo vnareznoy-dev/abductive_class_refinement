@@ -1,0 +1,1 @@
+track 31: s = 7.0 px; frames 122; transition at video frame 1513 (track frame 55); distance before 0.06 s, after 13.86 s; L_t at transition 9.0; states after: ['hold', 'hold', 'hold', 'hold', 'hold', 'hold']

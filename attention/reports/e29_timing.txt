@@ -1,0 +1,4 @@
+E29: processing time per frame and target, ms (single thread)
+  Python identity step (window, silhouettes, (2), (3)), 253 frames: median 0.49, p95 0.87
+  Prolog facts + explain/2, 1526 frames: median 0.08, p95 0.24
+  frame period: 33.4 ms at 29.97 Hz, 40 ms at 25 Hz

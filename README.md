@@ -13,8 +13,10 @@ justified abstention (`unknown`).
 
 **What is published here is code.** The datasets and videos are third-party
 and are downloaded separately from the sources listed below; they are not
-redistributed. The version of this repository that corresponds to the article
-is the tag `v1.0-article3`.
+redistributed. The first version of the article corresponds to the tag
+`v1.0-article3`; the revision for the *Scientific Bulletin of UNFU* (authors
+V. Yu. Nareznoy and O. M. Galchonkov) corresponds to the tag `v1.1-article3`
+(see "Version v1.1" below).
 
 ## Reproducibility map
 
@@ -45,6 +47,32 @@ bit-identical across hardware and library versions, so detector-dependent
 numbers can differ from the article within training variance; the
 re-measurement of 2026-09 is summarised in `reports/REMEASURE.md`.
 
+### Version v1.1 (revision for the Scientific Bulletin of UNFU)
+
+The numbers of the revised article are recounted in independent units (a UAV run
+or a bird track, not a window or a signal), with Wilson 95 % intervals and exact
+McNemar tests. The spectral criterion is checked **once** on the longest gap-free
+series of a track (at least 48 frames): a check in every shifted window is a
+multiple test and inflates the share of firings.
+
+| Result in the revised article | Script | Data | Saved report |
+|---|---|---|---|
+| Specificity of the silhouette criterion: 0 of 9 UAV runs (95 % interval 0–30 %); the rule "any window" would fire on 1–2 of 6 runs | `rev_flap.py` (R1) | `data_derived/uav_runs.csv` | `reports/r1_r3_flap.txt` |
+| Control bird tracks; Midway track 338 has two one-frame gaps, the criterion is fulfilled after their interpolation | `rev_flap.py` (R2a) | `data_derived/bird_tracks.csv` | same |
+| Sensitivity on 50 tracks of the Midway bird colony: 9 of 41 applicable tracks (22 %, interval 12–37 %) | `rev_flap.py` (R2b) | `data_derived/midway50_tracks.csv` | same |
+| Sensitivity of the result to the constants of the criterion (coefficient, amplitude, band, series length) | `rev_flap.py` (R3) | the three files above | same |
+| Strict accuracy vs grounding error with confidence intervals, held-out half of the tracks for the trained classifier, exact McNemar tests | `rev_kin.py` | CTU-MRS + synthetic birds | `reports/r5_kin_stats.txt` |
+| Processing time per frame, per spectral check and per abductive inference | `rev_timing.py` | Kormoran video, CTU-MRS | `reports/r6_timing.txt` |
+
+`rev_flap.py` needs only `data_derived/` and reproduces its report exactly;
+`rev_kin.py` needs `CTU_MRS_DIR`. The timing report depends on the hardware.
+
+Change in the theory (`air_objects.pl`): without a trusted detector label the
+facts decide only if **exactly one** class is admissible; if both are, the answer
+is `unknown` instead of the first class in the order of the rules. No experiment
+of the article reaches this case: `test_theory.py` passes 16 of 16, and the
+reports of `evaluate.py` and `alp_on_failures.py` are unchanged.
+
 ## Data sources
 
 | Material | Source | Version / identifiers used |
@@ -73,6 +101,7 @@ w, h in pixels), so the silhouette results can be re-checked without the raw dat
 | `midway_all_tracks.csv` | all 625 tracks found by `flap_midway.py` in the Midway video |
 | `uav_runs.csv` | annotated UAV box sizes of the 9 continuous birdrone runs (2738 frames; derived from the birdrone v10 annotations, CC BY 4.0, Roboflow user fatin-zamri) |
 | `decoy_tracks.csv` | the false detector track over water used in protocol P4 |
+| `midway50_tracks.csv` | per-frame boxes of the 50 Midway bird tracks selected by a fixed rule (length ≥ 96 frames, median mask size 4–12 px, straightness ≥ 0.8) and checked visually; used for the sensitivity estimate of v1.1 and in articles 4a/4b |
 
 ## Train/validation split of birdrone (`split_clean.py`)
 

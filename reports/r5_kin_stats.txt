@@ -1,0 +1,63 @@
+items: 100 real CTU-MRS drones + 90 synthetic birds; detector error 20 %, confidence 0.9
+B. general set
+  sigma 0.00 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.83 [0.77; 0.87]; trained 0.90 [0.85; 0.94]; abductive 0.83 [0.77; 0.87]
+     held-out 95 items: trained 0.88 [0.80; 0.93], abductive 0.79 [0.70; 0.86]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 2, only trained right 16, p = 0.00131
+     McNemar abductive vs detector: only abductive right 14, only detector right 0, p = 0.000122
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 1, only trained right 10, p = 0.0117
+  sigma 0.05 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.79 [0.73; 0.85]; trained 0.85 [0.79; 0.89]; abductive 0.79 [0.73; 0.85]
+     held-out 95 items: trained 0.84 [0.76; 0.90], abductive 0.77 [0.67; 0.84]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 0, only trained right 10, p = 0.00195
+     McNemar abductive vs detector: only abductive right 8, only detector right 0, p = 0.00781
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 7, p = 0.0156
+  sigma 0.15 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.77 [0.71; 0.83]; trained 0.82 [0.76; 0.87]; abductive 0.77 [0.71; 0.83]
+     held-out 95 items: trained 0.82 [0.73; 0.89], abductive 0.73 [0.63; 0.81]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 3, only trained right 12, p = 0.0352
+     McNemar abductive vs detector: only abductive right 4, only detector right 0, p = 0.125
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 9, p = 0.00391
+  sigma 0.30 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.77 [0.71; 0.83]; trained 0.84 [0.78; 0.88]; abductive 0.77 [0.71; 0.83]
+     held-out 95 items: trained 0.82 [0.73; 0.89], abductive 0.73 [0.63; 0.81]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 4, only trained right 16, p = 0.0118
+     McNemar abductive vs detector: only abductive right 4, only detector right 0, p = 0.125
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 9, p = 0.00391
+  sigma 0.60 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.77 [0.71; 0.83]; trained 0.55 [0.48; 0.62]; abductive 0.77 [0.71; 0.83]
+     held-out 95 items: trained 0.46 [0.37; 0.56], abductive 0.73 [0.63; 0.81]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 62, only trained right 20, p = 3.71e-06
+     McNemar abductive vs detector: only abductive right 4, only detector right 0, p = 0.125
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 35, only trained right 10, p = 0.000247
+  sigma 1.00 m (n = 190): detector 0.75 [0.69; 0.81]; rule 0.77 [0.71; 0.83]; trained 0.47 [0.40; 0.54]; abductive 0.77 [0.71; 0.83]
+     held-out 95 items: trained 0.41 [0.32; 0.51], abductive 0.73 [0.63; 0.81]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 77, only trained right 20, p = 4.59e-09
+     McNemar abductive vs detector: only abductive right 4, only detector right 0, p = 0.125
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 40, only trained right 10, p = 2.39e-05
+C. hovering drones (60) + birds (90)
+  sigma 0.00 m (n = 150): detector 0.72 [0.64; 0.79]; rule 0.89 [0.83; 0.93]; trained 1.00 [0.98; 1.00]; abductive 0.89 [0.83; 0.93]
+     held-out 75 items: trained 1.00 [0.95; 1.00], abductive 0.87 [0.77; 0.93]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 0, only trained right 16, p = 3.05e-05
+     McNemar abductive vs detector: only abductive right 26, only detector right 0, p = 2.98e-08
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 10, p = 0.00195
+  sigma 0.30 m (n = 150): detector 0.72 [0.64; 0.79]; rule 0.83 [0.76; 0.88]; trained 0.83 [0.76; 0.88]; abductive 0.83 [0.76; 0.88]
+     held-out 75 items: trained 0.79 [0.68; 0.86], abductive 0.79 [0.68; 0.86]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 0, only trained right 0, p = 1
+     McNemar abductive vs detector: only abductive right 16, only detector right 0, p = 3.05e-05
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 0, p = 1
+  sigma 0.60 m (n = 150): detector 0.72 [0.64; 0.79]; rule 0.83 [0.76; 0.88]; trained 0.91 [0.85; 0.94]; abductive 0.83 [0.76; 0.88]
+     held-out 75 items: trained 0.89 [0.80; 0.94], abductive 0.79 [0.68; 0.86]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 0, only trained right 12, p = 0.000488
+     McNemar abductive vs detector: only abductive right 16, only detector right 0, p = 3.05e-05
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 0, only trained right 8, p = 0.00781
+  sigma 1.00 m (n = 150): detector 0.72 [0.64; 0.79]; rule 0.83 [0.76; 0.88]; trained 0.89 [0.83; 0.93]; abductive 0.83 [0.76; 0.88]
+     held-out 75 items: trained 0.84 [0.74; 0.91], abductive 0.79 [0.68; 0.86]; abductive 'unknown' 0
+     McNemar abductive vs trained: only abductive right 16, only trained right 26, p = 0.164
+     McNemar abductive vs detector: only abductive right 16, only detector right 0, p = 3.05e-05
+     McNemar abductive vs rule: only abductive right 0, only rule right 0, p = 1
+     McNemar on held-out: only abductive right 12, only trained right 16, p = 0.572

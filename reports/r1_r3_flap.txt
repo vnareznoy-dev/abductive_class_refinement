@@ -1,0 +1,38 @@
+R1. Specificity of criterion (12) on the birdrone UAV runs (manual annotation boxes)
+  25 Hz: runs >= 48 frames 6 (2630 frames); fired once-per-run: 0/6 (0 %, 95 % CI 0-39 %); rule 'any 48-frame window': 1/6 (17 %, 95 % CI 3-56 %); runs < 48 frames 3 (checked with n >= 32: fired 0)
+  30 Hz: runs >= 48 frames 6 (2630 frames); fired once-per-run: 0/6 (0 %, 95 % CI 0-39 %); rule 'any 48-frame window': 2/6 (33 %, 95 % CI 10-70 %); runs < 48 frames 3 (checked with n >= 32: fired 0)
+    run_1: 40 frames; ratio S/S0 w 1.61, h 1.43, area 1.62, h/w 1.14; fired False
+    run_2: 64 frames; ratio S/S0 w 1.40, h 1.45, area 1.32, h/w 0.92; fired False
+    run_3: 34 frames; ratio S/S0 w 1.03, h 1.43, area 1.17, h/w 1.39; fired False
+    run_4: 429 frames; ratio S/S0 w 0.98, h 0.93, area 0.95, h/w 0.89; fired False
+    run_5: 34 frames; ratio S/S0 w 1.15, h 1.03, area 1.11, h/w 1.07; fired False
+    run_6: 620 frames; ratio S/S0 w 1.03, h 1.05, area 1.05, h/w 1.06; fired False
+    run_7: 209 frames; ratio S/S0 w 0.96, h 1.13, area 1.07, h/w 1.19; fired False
+    run_8: 204 frames; ratio S/S0 w 0.87, h 0.80, area 0.88, h/w 1.11; fired False
+    run_9: 1104 frames; ratio S/S0 w 0.93, h 0.98, area 0.98, h/w 1.01; fired False
+
+R2a. The three published bird tracks
+  cormorant: frames 1351-1398, 48 points, gaps before frames []; longest gap-free run 48 frames; single check fired True (best S/S0 2.02, peak 4.69 Hz)
+  heron: frames 0-88, 89 points, gaps before frames []; longest gap-free run 89 frames; single check fired True (best S/S0 2.29, peak 2.70 Hz)
+  midway_338: frames 1159-1215, 55 points, gaps before frames [1207, 1209]; longest gap-free run 47 frames; single check fired False (n < 48: criterion not applicable)
+     with the 2 missing frames interpolated (57 frames): fired True, best S/S0 2.47, peak 2.63 Hz w 1.68, h 2.47*, area 1.81, h/w 1.80
+
+R2b. 50 Midway bird tracks (fixed selection rule, visually checked), single check on the longest gap-free run, 29.97 Hz
+  longest gap-free run: median 82 frames (min 34, max 189); criterion applicable (>= 48) on 41 of 50
+  fired: 9/41 (22 %, 95 % CI 12-37 %) of applicable tracks; tracks [2, 10, 22, 12, 32, 35, 44, 37, 137]
+  rule 'any 48-frame window' on the same runs: 36/41 (88 %, 95 % CI 74-95 %)
+  median silhouette size of the 50 tracks: 9.0 px (range 5-12)
+
+R3. Sensitivity to the hand-set constants of (12): UAV runs >= 48 fired (25 Hz / 30 Hz) | published birds fired | Midway 50 fired
+  published: mult 2, amp 0.02, band 1.5-6, n 48    UAV 0/6 / 0/6 | birds 3/3 | Midway 9
+  mult 1.5                                         UAV 0/6 / 0/6 | birds 3/3 | Midway 26
+  mult 2.5                                         UAV 0/6 / 0/6 | birds 0/3 | Midway 2
+  mult 3                                           UAV 0/6 / 0/6 | birds 0/3 | Midway 0
+  amp 0.01                                         UAV 0/6 / 0/6 | birds 3/3 | Midway 9
+  amp 0.05                                         UAV 0/6 / 0/6 | birds 3/3 | Midway 9
+  band 1.0-6                                       UAV 0/6 / 0/6 | birds 2/3 | Midway 14
+  band 2.0-6                                       UAV 0/6 / 0/6 | birds 3/3 | Midway 6
+  band 1.5-5                                       UAV 0/6 / 0/6 | birds 3/3 | Midway 18
+  band 1.5-8                                       UAV 0/6 / 0/6 | birds 0/3 | Midway 0
+  n 32                                             UAV 0/6 / 0/6 | birds 3/3 | Midway 13
+  n 64                                             UAV 0/6 / 0/6 | birds 1/3 | Midway 6

@@ -1,0 +1,3 @@
+frame 1920x1080: silhouette extraction 31.3 ms/frame
+spectral criterion (12), 4 measures x 48 frames: 0.25 ms per check
+abductive inference (SWI-Prolog via pyswip): 0.22 ms per decision

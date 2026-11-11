@@ -165,6 +165,14 @@ classify(C, accepted(C, not_refuted)) :-
     f_det(C, P), thr(det_trust, PT), P >= PT,
     \+ refuted(C, _), !.
 
+% ORDER INDEPENDENCE (article 3, version v1.1). Without a trusted label the facts decide only if
+% EXACTLY ONE class is admissible; if both are, the evidence is ambiguous and the answer
+% is "unknown" instead of the first class in the order of `class/1`. No experiment of
+% article 3 reaches this case (there the label is trusted, or the only fact is f_flap).
+classify(unknown, ambiguous(drone(WD), bird(WB))) :-
+    \+ ( f_det(_, P0), thr(det_trust, PT0), P0 >= PT0 ),
+    admissible(drone, WD), admissible(bird, WB), !.
+
 classify(C, kinematic_only(Why)) :-
     \+ ( f_det(_, P0), thr(det_trust, PT0), P0 >= PT0 ),
     admissible(C, Why), !.

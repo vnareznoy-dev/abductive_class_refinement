@@ -1,0 +1,17 @@
+G1. Midway colony, 50 tracks: 222 gaps, by length (frames: count) {1: 132, 2: 50, 3: 19, 4: 15, 5: 6}
+  gaps up to 0 frame(s) interpolated: criterion applicable on 41 of 50 tracks, median run 82 frames, fulfilled on 9 of 41 (22 %, 95 % interval 12-37 %), interpolated frames 0
+  gaps up to 1 frame(s) interpolated: criterion applicable on 48 of 50 tracks, median run 106 frames, fulfilled on 6 of 48 (12 %, 95 % interval 6-25 %), interpolated frames 77
+  gaps up to 2 frame(s) interpolated: criterion applicable on 49 of 50 tracks, median run 117 frames, fulfilled on 5 of 49 (10 %, 95 % interval 4-22 %), interpolated frames 174
+  gaps up to 3 frame(s) interpolated: criterion applicable on 50 of 50 tracks, median run 120 frames, fulfilled on 6 of 50 (12 %, 95 % interval 6-24 %), interpolated frames 267
+  gaps up to 5 frame(s) interpolated: criterion applicable on 50 of 50 tracks, median run 129 frames, fulfilled on 5 of 50 (10 %, 95 % interval 4-21 %), interpolated frames 379
+G2. Control bird tracks
+  cormorant: gaps up to 0 interpolated, run 48 frames, fulfilled: True
+  cormorant: gaps up to 2 interpolated, run 48 frames, fulfilled: True
+  heron: gaps up to 0 interpolated, run 89 frames, fulfilled: True
+  heron: gaps up to 2 interpolated, run 89 frames, fulfilled: True
+  midway_338: gaps up to 0 interpolated, run 47 frames, fulfilled: not applicable (run < 48)
+  midway_338: gaps up to 2 interpolated, run 57 frames, fulfilled: True
+G3. Random frame loss + interpolation of gaps up to 2 frames (UAV runs: {'run_1': 40, 'run_2': 64, 'run_3': 34, 'run_4': 429, 'run_5': 34, 'run_6': 620, 'run_7': 209, 'run_8': 204, 'run_9': 1104} frames, no gaps in the source)
+  loss 2%: UAV runs fired 0 of 120 trials; colony tracks fired 104 of 980 trials (11 %)
+  loss 5%: UAV runs fired 0 of 120 trials; colony tracks fired 115 of 978 trials (12 %)
+  loss 10%: UAV runs fired 0 of 119 trials; colony tracks fired 142 of 977 trials (15 %)

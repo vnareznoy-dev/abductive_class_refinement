@@ -16,7 +16,8 @@ and are downloaded separately from the sources listed below; they are not
 redistributed. The first version of the article corresponds to the tag
 `v1.0-article3`; the revision for the *Scientific Bulletin of UNFU* (authors
 V. Yu. Nareznoy and O. M. Galchonkov) corresponds to the tag `v1.1-article3`
-(see "Version v1.1" below).
+(see "Version v1.1" below), and its revision after peer review to the tag
+`v1.2-article3` (see "Version v1.2" below).
 
 ## Reproducibility map
 
@@ -66,6 +67,20 @@ multiple test and inflates the share of firings.
 
 `rev_flap.py` needs only `data_derived/` and reproduces its report exactly;
 `rev_kin.py` needs `CTU_MRS_DIR`. The timing report depends on the hardware.
+
+### Version v1.2 (revision after peer review)
+
+Two additional calculations answer the remarks of the reviewer; the method, the
+theory and all earlier numbers are unchanged.
+
+| Result in the revised article | Script | Data | Saved report |
+|---|---|---|---|
+| The method answers "unknown" on none of the 190 tracks at any grounding error, so its strict accuracy and that of the trained classifier are compared at equal coverage; accuracy–rejection table of the trained classifier with a reject option (at an error of 1 m: threshold 0.9 – coverage 0.97, accuracy on the answered tracks 0.49; threshold 0.99 – coverage 0.52, accuracy 0.73) | `rev_reject.py` | CTU-MRS + synthetic birds | `reports/r7_reject.txt` |
+| Tracker gaps and the 48-frame continuous series: with linear interpolation of gaps of up to 2 frames the criterion is applicable on 49 of the 50 Midway tracks (fulfilled on 5, interval 4–22 %); no false firings on the UAV runs after a random loss of 2–10 % of the frames (0 of 359 trials) | `rev_gaps.py` | `data_derived/` | `reports/r8_gaps.txt` |
+
+`rev_gaps.py` needs only `data_derived/`; `rev_reject.py` needs `CTU_MRS_DIR`
+and uses the same set and seeds as `rev_kin.py`. Both reproduce their reports
+exactly.
 
 Change in the theory (`air_objects.pl`): without a trusted detector label the
 facts decide only if **exactly one** class is admissible; if both are, the answer
